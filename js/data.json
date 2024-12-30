@@ -1,0 +1,327 @@
+
+{
+    "hotels": [
+        {
+            "id": 1,
+            "name": "Davue Hotel Da Nang",
+            "description": "Davue Hotel Da Nang là một khách sạn nằm trong khu vực an ninh, toạ lạc tại Mỹ An. khách sạn sở hữu vị trí đắc địa cách sân bay Sân bay quốc tế Đà Nẵng (DAD) 5,14 km. Không chỉ sở hữu vị trí đắc địa, Davue Hotel Da Nang còn là một trong những khách sạn nằm cách Cà phê Mỹ Hạnh chưa đầy 45,01 km và Núi Bạch Mã chưa đầy 45,83 km.",
+            "images": ["hotelimg1.webp", "hotelimg2.webp", "hotelimg3.webp", "hotelimg3.webp", "hotelimg3.webp", "hotelimg4.webp"],
+            "price": 3300000,
+            "discount": 25,
+            "reviews": 697,
+            "rating": 8.7,
+            "location": "Mỹ An, Đà Nẵng",
+            "amenities": [1, 2, 3, 4, 5, 6, 7],
+            "inarea" : [
+                {
+                    "location": "Gần khu vui chơi giải trí",
+                    "distance": 0
+                },
+                {
+                    "location": "Số 294 Trưng Nữ Vương",
+                    "distance": 2960
+                },
+                {
+                    "location": "Biển Mỹ Khê",
+                    "distance": 868
+                },
+                {
+                    "location": "Số 294 Trưng Nữ Vương",
+                    "distance": 2840
+                },
+                {
+                    "location": "Danang Cathedral",
+                    "distance": 2840
+                },
+                {
+                    "location": "Biển Mỹ Khê",
+                    "distance": 2840
+                }
+            ],
+            "features": [1, 2, 3],
+            "rooms": [
+                {
+                    "name": "Superior Double Room",
+                    "price": 2070000,
+                    "discount": 50,
+                    "images": ["roomimg1.webp", "roomimg2.webp", "roomimg3.webp", "roomimg1.webp", "roomimg3.webp", "roomimg4.webp"],
+                    "bed": "1 Giường đôi",
+                    "people": "2 khách"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Minty Fresh Hotel",
+            "description": "Minty Fresh Hotel is a cozy hotel located in the heart of the city. With its convenient location, Minty Fresh Hotel offers easy access to the city's must-see destinations.",
+            "images": ["hotelimg1.webp", "hotelimg2.webp", "hotelimg3.webp", "hotelimg3.webp", "hotelimg3.webp", "hotelimg4.webp"],
+            "price": 2500000,
+            "discount": 20,
+            "reviews": 423,
+            "rating": 8.4,
+            "location": "City Center, Da Nang",
+            "amenities": [1, 2, 3, 4, 5],
+            "inarea" : [
+                {
+                    "location": "Near shopping area",
+                    "distance": 0
+                },
+                {
+                    "location": "Danang Museum of Cham Sculpture",
+                    "distance": 950
+                },
+                {
+                    "location": "Dragon Bridge",
+                    "distance": 3200
+                },
+                {
+                    "location": "Han River",
+                    "distance": 1700
+                },
+                {
+                    "location": "Marble Mountains",
+                    "distance": 8500
+                }
+            ],
+            "features": [2, 3, 4],
+            "rooms": [
+                {
+                    "name": "Deluxe King Room",
+                    "price": 1800000,
+                    "discount": 30,
+                    "images": ["hotelimg1.webp", "hotelimg2.webp", "hotelimg3.webp", "hotelimg3.webp", "hotelimg3.webp", "hotelimg4.webp"],
+                    "bed": "1 King Bed",
+                    "people": "2 guests"
+                },
+                {
+                    "name": "Standard Twin Room",
+                    "price": 1500000,
+                    "discount": 10,
+                    "images": ["roomimg1.webp", "roomimg2.webp", "roomimg3.webp", "roomimg1.webp", "roomimg3.webp", "roomimg4.webp"],
+                    "bed": "2 Single Beds",
+                    "people": "2 guests"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Oceanview Resort",
+            "description": "Oceanview Resort offers luxurious accommodations with stunning views of the ocean. Situated right on the beach, guests can enjoy a relaxing getaway surrounded by natural beauty.",
+            "images": ["hotelimg1.webp", "hotelimg2.webp", "hotelimg3.webp", "hotelimg3.webp", "hotelimg3.webp", "hotelimg4.webp"],
+            "price": 4200000,
+            "discount": 15,
+            "reviews": 892,
+            "rating": 9.2,
+            "location": "Son Tra Peninsula, Da Nang",
+            "amenities": [6, 1, 2, 4, 5],
+            "inarea" : [
+                {
+                    "location": "On the beach",
+                    "distance": 0
+                },
+                {
+                    "location": "Linh Ung Pagoda",
+                    "distance": 1300
+                },
+                {
+                    "location": "Monkey Mountain",
+                    "distance": 3500
+                },
+                {
+                    "location": "Da Nang International Airport",
+                    "distance": 13000
+                }
+            ],
+            "features": [1, 3, 5],
+            "rooms": [
+                {
+                    "name": "Oceanfront Suite",
+                    "price": 3500000,
+                    "discount": 20,
+                    "images": ["roomimg1.webp", "roomimg2.webp", "roomimg3.webp", "roomimg1.webp", "roomimg3.webp", "roomimg4.webp"],
+                    "bed": "1 King Bed",
+                    "people": "2 guests"
+                },
+                {
+                    "name": "Beachfront Villa",
+                    "price": 5500000,
+                    "discount": 10,
+                    "images": ["roomimg1.webp", "roomimg2.webp", "roomimg3.webp", "roomimg1.webp", "roomimg3.webp", "roomimg4.webp"],
+                    "bed": "2 King Beds",
+                    "people": "4 guests"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Golden Sands Resort",
+            "description": "Golden Sands Resort offers luxurious beachfront accommodations with breathtaking views of the sea. Guests can enjoy various amenities and activities for a memorable stay.",
+            "images": ["hotelimg1.webp", "hotelimg2.webp", "hotelimg3.webp", "hotelimg3.webp", "hotelimg3.webp", "hotelimg4.webp"],
+            "price": 4800000,
+            "discount": 20,
+            "reviews": 750,
+            "rating": 9.1,
+            "location": "Non Nuoc Beach, Da Nang",
+            "amenities": [6, 1, 2, 3, 4, 5],
+            "inarea": [
+                {
+                    "location": "On the beach",
+                    "distance": 0
+                },
+                {
+                    "location": "Marble Mountains",
+                    "distance": 800
+                },
+                {
+                    "location": "Hoi An Ancient Town",
+                    "distance": 18000
+                },
+                {
+                    "location": "Da Nang International Airport",
+                    "distance": 15000
+                }
+            ],
+            "features": [1, 4, 5],
+            "rooms": [
+                {
+                    "name": "Oceanview Suite",
+                    "price": 3900000,
+                    "discount": 25,
+                    "images": ["roomimg1.webp", "roomimg2.webp", "roomimg3.webp", "roomimg1.webp", "roomimg3.webp", "roomimg4.webp"],
+                    "bed": "1 King Bed",
+                    "people": "2 guests"
+                },
+                {
+                    "name": "Beachfront Bungalow",
+                    "price": 5800000,
+                    "discount": 15,
+                    "images": ["roomimg1.webp", "roomimg2.webp", "roomimg3.webp", "roomimg1.webp", "roomimg3.webp", "roomimg4.webp"],
+                    "bed": "1 King Bed",
+                    "people": "2 guests"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Skyline Hotel Da Nang",
+            "description": "Skyline Hotel Da Nang offers modern and elegant accommodations with panoramic views of the city skyline. Located in the heart of the city, guests can easily explore the nearby attractions and entertainment options.",
+            "images": ["hotelimg1.webp", "hotelimg2.webp", "hotelimg3.webp", "hotelimg3.webp", "hotelimg3.webp", "hotelimg4.webp"],
+            "price": 3800000,
+            "discount": 15,
+            "reviews": 540,
+            "rating": 8.8,
+            "location": "City Center, Da Nang",
+            "amenities": [6, 1, 2, 3, 4, 5],
+            "inarea": [
+                {
+                    "location": "Near shopping area",
+                    "distance": 0
+                },
+                {
+                    "location": "Dragon Bridge",
+                    "distance": 800
+                },
+                {
+                    "location": "Han Market",
+                    "distance": 1200
+                },
+                {
+                    "location": "Marble Mountains",
+                    "distance": 7500
+                }
+            ],
+            "features": [2, 3, 6],
+            "rooms": [
+                {
+                    "name": "Skyline Suite",
+                    "price": 3200000,
+                    "discount": 20,
+                    "images": ["roomimg1.webp", "roomimg2.webp", "roomimg3.webp", "roomimg1.webp", "roomimg3.webp", "roomimg4.webp"],
+                    "bed": "1 King Bed",
+                    "people": "2 guests"
+                },
+                {
+                    "name": "City View Room",
+                    "price": 2500000,
+                    "discount": 10,
+                    "images": ["roomimg1.webp", "roomimg2.webp", "roomimg3.webp", "roomimg1.webp", "roomimg3.webp", "roomimg4.webp"],
+                    "bed": "2 Single Beds",
+                    "people": "2 guests"
+                }
+            ]
+        }
+    ],
+    "hotelfeatures": [
+        {
+            "id": 1,
+            "name": "Có miễn phí hủy phòng"
+        },
+        {
+            "id": 2,
+            "name": "Thanh toán tại khách sạn"
+        },
+        {
+            "id": 3,
+            "name": "Sân thượng"
+        },
+        {
+            "id": 4,
+            "name": "Quầy bar"
+        },
+        {
+            "id": 5,
+            "name": "Thuê xe hơi"
+        }
+    ],
+    "hotelpromoinfos": [
+        {
+            "id": 1,
+            "name": "Ưu đãi tặng riêng bạn"
+        },
+        {
+            "id": 2,
+            "name": "Tiết kiệm 36%"
+        },
+        {
+            "id": 3,
+            "name": "Ưu đãi giờ chót"
+        }
+    ],
+    "hotelamenities": [
+        {
+            "id": 1,
+            "name": "Máy lạnh",
+            "image": "airconditioner.png"
+        },
+        {
+            "id": 2,
+            "name": "Thang máy",
+            "image": "elevator.png"
+        },
+        {
+            "id": 3,
+            "name": "Lễ tân 24h",
+            "image": "24hservice.png"
+        },
+        {
+            "id": 4,
+            "name": "Hồ bơi",
+            "image": "swimmingpool.png"
+        },
+        {
+            "id": 5,
+            "name": "Bãi đậu xe",
+            "image": "carpark.png"
+        },
+        {
+            "id": 6,
+            "name": "Wifi",
+            "image": "wifi.png"
+        },
+        {
+            "id": 7,
+            "name": "Nhà hàng",
+            "image": "restaurant.png"
+        }
+    ]
+}
