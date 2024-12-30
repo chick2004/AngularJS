@@ -1,0 +1,2465 @@
+
+<div class="py-5" style="background-image: url(image/banner.webp); background-size: cover; background-repeat: no-repeat; height: fit-content;">
+    <h2 class="text-white text-center">Từ Đông Nam Á Đến Thế Giới, Trong Tầm Tay Bạn</h2>
+    <div class="container">
+        <style>
+            #searchTab .active strong {
+                color: #0194f3;
+            }
+        </style>
+        <ul class="nav nav-tabs" id="searchTab" role="tablist">
+            <li class="nav-item me-4 mb-3" role="presentation">
+                <button class="nav-link rounded-pill text-light active" id="searchTabHotel-tab" data-bs-toggle="tab" data-bs-target="#searchTabHotel-tab-pane" type="button" role="tab" aria-controls="searchTabHotel-tab-pane" aria-selected="true">
+                    <strong>
+                        <i class="bi bi-building"></i>
+                        Khách sạn
+                    </strong>
+                </button>
+            </li>
+            <li class="nav-item me-4 mb-3" role="presentation">
+                <button class="nav-link rounded-pill text-light" id="searchTabAirlineTicket-tab" data-bs-toggle="tab" data-bs-target="#searchTabAirlineTicket-tab-pane" type="button" role="tab" aria-controls="searchTabAirlineTicket-tab-pane" aria-selected="false">
+                    <strong>
+                        <i class="bi bi-airplane-fill"></i>
+                        Vé máy bay
+                    </strong>
+                </button>
+            </li>
+            <li class="nav-item me-4 mb-3" role="presentation">
+                <button class="nav-link rounded-pill text-light" id="searchTabBusTicket-tab" data-bs-toggle="tab" data-bs-target="#searchTabBusTicket-tab-pane" type="button" role="tab" aria-controls="searchTabBusTicket-tab-pane" aria-selected="false">
+                    <strong>
+                        <i class="bi bi-bus-front"></i>
+                        Vé xe khách
+                    </strong>
+                </button>
+            </li>
+            <li class="nav-item me-4 mb-3" role="presentation">
+                <button class="nav-link rounded-pill text-light" id="searchTabAirportPickup-tab" data-bs-toggle="tab" data-bs-target="#searchTabAirportPickup-tab-pane" type="button" role="tab" aria-controls="searchTabAirportPickup-tab-pane" aria-selected="false">
+                    <strong>
+                        <i class="bi bi-luggage"></i>
+                        Đưa đón sân bay
+                    </strong>
+                </button>
+            </li>
+            <li class="nav-item me-4 mb-3" role="presentation">
+                <button class="nav-link rounded-pill text-light" id="searchTabCarRental-tab" data-bs-toggle="tab" data-bs-target="#searchTabCarRental-tab-pane" type="button" role="tab" aria-controls="searchTabCarRental-tab-pane" aria-selected="false">
+                    <strong>
+                        <i class="bi bi-car-front"></i>
+                        Cho thuê xe
+                    </strong>
+                </button>
+            </li>
+            <li class="nav-item mb-3" role="presentation">
+                <button class="nav-link rounded-pill text-light" id="searchTabFunActivities-tab" data-bs-toggle="tab" data-bs-target="#searchTabFunActivities-tab-pane" type="button" role="tab" aria-controls="searchTabFunActivities-tab-pane" aria-selected="false">
+                    <strong>
+                        <i class="bi bi-binoculars-fill"></i>
+                        Hoạt động vui chơi
+                    </strong>
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="searchTabContent">
+            <div class="tab-pane container fade show active px-3" id="searchTabHotel-tab-pane" role="tabpanel" aria-labelledby="searchTabHotel-tab" tabindex="0">
+                <ul class="nav nav-tabs border-0 mt-3" id="nestedSearchTab" role="tablist">
+                    <li class="nav-item me-4 mb-3" role="presentation">
+                        <button class="nav-link rounded-pill text-light py-1 bg-dark bg-opacity-50 active" id="nestedSearchTabHotel-tab" data-bs-toggle="tab" data-bs-target="#nestedSearchTabHotel-tab-pane" type="button" role="tab" aria-controls="nestedSearchTabHotel-tab-pane" aria-selected="true">
+                            <strong class="fs-6 text">
+                                <i class="bi bi-building"></i>
+                                Khách sạn
+                            </strong>
+                        </button>
+                    </li>
+                    <li class="nav-item me-4 mb-3" role="presentation">
+                        <button class="nav-link rounded-pill text-light py-1 bg-dark bg-opacity-50" id="nestedSearchTabHolidayStays-tab" data-bs-toggle="tab" data-bs-target="#nestedSearchTabHolidayStays-tab-pane" type="button" role="tab" aria-controls="nestedSearchTabHolidayStays-tab-pane" aria-selected="false">
+                            <strong class="fs-6 text">
+                                <i class="bi bi-airplane-fill"></i>
+                                Holiday Stays
+                            </strong>
+                        </button>
+                    </li>
+                    <li class="nav-item me-4 mb-3" role="presentation">
+                        <button class="nav-link rounded-pill text-light py-1 bg-dark bg-opacity-50" id="nestedSearchTabVilla-tab" data-bs-toggle="tab" data-bs-target="#nestedSearchTabVilla-tab-pane" type="button" role="tab" aria-controls="nestedSearchTabVilla-tab-pane" aria-selected="false">
+                            <strong>
+                                <i class="bi bi-bus-front"></i>
+                                Biệt thự
+                            </strong>
+                        </button>
+                    </li>
+                    <li class="nav-item me-4 mb-3" role="presentation">
+                        <button class="nav-link rounded-pill text-light py-1 bg-dark bg-opacity-50" id="nestedSearchTabApartment-tab" data-bs-toggle="tab" data-bs-target="#nestedSearchTabApartment-tab-pane" type="button" role="tab" aria-controls="nestedSearchTabApartment-tab-pane" aria-selected="false">
+                            <strong>
+                                <i class="bi bi-luggage"></i>
+                                Căn hộ
+                            </strong>
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="nestedSearchTabContent">
+                    <div class="tab-pane container fade show active p-0" id="nestedSearchTabHotel-tab-pane" role="tabpanel" aria-labelledby="nestedSearchTabHotel-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col text-white p-2 fw-bold">Thành phố, địa điểm hoặc tên khách sạn</div>
+                            <div class="col text-white p-2 fw-bold">Ngày nhận phòng và trả phòng</div>
+                            <div class="col text-white p-2 fw-bold">Khách và phòng</div>
+                        </div>
+                        <div class="input-group position-relative">
+                            
+                            <span class="input-group-text bg-white  rounded-start-circle" id="basic-addon1">
+                                <i class="bi bi-geo-alt-fill text-primary fs-4"></i>
+                            </span>
+                            <input type="text" class="form-control py-3 rounded-0 fw-bold" value="Đà Nẵng" aria-label="Username" aria-describedby="basic-addon1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHotelList" aria-expanded="false" aria-controls="collapseHotelList">
+                            <div class="collapse position-absolute start-0 top-100  custom-width-300px overflow-hidden rounded-3 z-2  border shadow bg-white p-0" id="collapseHotelList">
+                                <div class="card">
+                                    <div class="card-header fw-medium text-black">
+                                        <small class="fw-bold">Kết quả tìm kiếm cuối cùng</small>
+                                    </div>
+                                    <ul class="list-group">
+                                        <li class="list-group-item border-0 rounded-0 px-2">
+                                            <div class="row">
+                                                <div class="col align-self-center">
+                                                    <p class="m-0 fw-bold">Đà Nẵng</p>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <p class="m-0">
+                                                        <span class="badge text-primary border border-primary rounded-pill">Vùng</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="card-header fw-medium text-black">
+                                        <small class="fw-bold">Điểm đến phổ biến</small>
+                                    </div>
+                                    <ul class="list-group">
+                                        <li class="list-group-item border-0 border-bottom rounded-0 px-2">
+                                            <div class="row">
+                                                <div class="col align-self-center">
+                                                    <p class="m-0 fw-bold">Đà Nẵng</p>
+                                                    <p class="m-0 fw-medium">Việt Nam</p>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <p class="m-0">
+                                                        <span class="badge text-primary border border-primary rounded-pill">Vùng</span>
+                                                    </p>
+                                                    <p class="m-0 fw-medium text-primary text-nowrap">
+                                                        <small>1.715 khách sạn</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item border-0 border-bottom rounded-0 px-2">
+                                            <div class="row">
+                                                <div class="col align-self-center">
+                                                    <p class="m-0 fw-bold">Đà Nẵng</p>
+                                                    <p class="m-0 fw-medium">Việt Nam</p>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <p class="m-0">
+                                                        <span class="badge text-primary border border-primary rounded-pill">Vùng</span>
+                                                    </p>
+                                                    <p class="m-0 fw-medium text-primary text-nowrap">
+                                                        <small>1.715 khách sạn</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item border-0 border-bottom rounded-0 px-2">
+                                            <div class="row">
+                                                <div class="col align-self-center">
+                                                    <p class="m-0 fw-bold">Đà Nẵng</p>
+                                                    <p class="m-0 fw-medium">Việt Nam</p>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <p class="m-0">
+                                                        <span class="badge text-primary border border-primary rounded-pill">Vùng</span>
+                                                    </p>
+                                                    <p class="m-0 fw-medium text-primary text-nowrap">
+                                                        <small>1.715 khách sạn</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item border-0 rounded-0 px-2">
+                                            <div class="row">
+                                                <div class="col align-self-center">
+                                                    <p class="m-0 fw-bold">Đà Nẵng</p>
+                                                    <p class="m-0 fw-medium">Việt Nam</p>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <p class="m-0">
+                                                        <span class="badge text-primary border border-primary rounded-pill">Vùng</span>
+                                                    </p>
+                                                    <p class="m-0 fw-medium text-primary text-nowrap">
+                                                        <small>1.715 khách sạn</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <span class="input-group-text rounded-0 bg-white" id="basic-addon1">
+                                <i class="bi bi-calendar3 text-primary fs-4"></i>
+                            </span>
+                            <input type="text" class="form-control py-3 fw-bold  rounded-0" value="16 th 3 2024" aria-label="Username" aria-describedby="basic-addon1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDate" aria-expanded="false" aria-controls="collapseDate">     
+                            <div class="collapse position-absolute start-0 top-100 w-auto rounded z-2 border shadow bg-white p-3" id="collapseDate">
+                                <div class="row border-bottom mt-0">
+                                    <h5>Ngày ở</h5>
+                                </div>
+                                <div class="row gap-0">
+                                    <div class="col-sm-6 p-0">
+                                        <div class="p-2 w-100 border-bottom ">
+                                            <p class="fw-medium text-secondary mb-0">
+                                                <small>Nhận phòng</small>
+                                            </p>
+                                            <p class="fw-bold mb-0">
+                                                Thứ 5, 21 thg 3 2024
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="px-2 py-2">
+                                                        <h6 class="fw-medium">March 2024</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col text-end">
+                                                    <div class="p-2">                      
+                                                        <i class="bi bi-chevron-left text-primary"></i>
+                                                        <i class="bi bi-chevron-right text-primary"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <table class="w-100 border-end">
+                                            <tr class="border-bottom">
+                                                <td class="col fw-medium text-secondary p-2"><small>Mon</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Tue</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Wed</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Thu</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Fri</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Sat</small></td>
+                                                <td class="col fw-medium text-secondary p-2 text-danger"><small>Sun</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td class=""></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">1</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">2</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">3</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">4</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">5</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">6</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">7</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">8</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">9</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">10</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">11</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">12</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">13</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">14</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">15</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">16</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">17</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">18</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">19</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">20</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">21</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">22</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">23</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">24</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">25</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">26</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">27</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">28</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">29</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">30</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">31</h6>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    
+                                    <div class="col-sm-6 p-0">
+                                        <div class="p-2 w-100 border-bottom">
+                                            <p class="fw-medium text-secondary mb-0">
+                                                <small>Nhận phòng</small>
+                                            </p>
+                                            <p class="fw-bold mb-0">
+                                                Thứ 5, 21 thg 3 2024
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="px-3 py-2">
+                                                        <h6 class="fw-medium">March 2024</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <div class="px-2">                      
+                                                        <i class="bi bi-chevron-left text-primary"></i>
+                                                        <i class="bi bi-chevron-right text-primary"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <table class="w-100">
+                                            <tr class="border-bottom">
+                                                <td class="col fw-medium text-secondary p-2"><small>Mon</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Tue</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Wed</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Thu</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Fri</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Sat</small></td>
+                                                <td class="col fw-medium text-secondary p-2 text-danger"><small>Sun</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td class=""></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">1</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">2</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">3</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">4</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">5</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">6</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">7</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">8</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">9</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">10</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">11</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">12</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">13</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">14</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">15</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">16</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">17</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">18</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">19</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">20</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">21</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">22</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">23</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">24</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">25</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">26</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">27</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">28</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">29</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">30</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">31</h6>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>  
+                            
+                            <span class="input-group-text rounded-0 bg-white" id="basic-addon1">
+                                <i class="bi bi-person-badge text-primary fs-4"></i>
+                            </span>
+                            
+                            <input type="text" class="form-control py-3 fw-bold" value="1 người lớn, 1 trẻ em, 1 phòng" aria-label="Username" aria-describedby="basic-addon1"type="button" data-bs-toggle="collapse" data-bs-target="#collapseAmount" aria-expanded="false" aria-controls="collapseAmount">    
+                            <div class="collapse position-absolute end-0 top-100 w-auto rounded z-2 border shadow bg-white p-3" id="collapseAmount">
+                                <div class="row">
+                                    <div class="col-sm align-self-center fw-medium">
+                                        <i class="bi bi-person-standing text-primary"></i>
+                                        Người lớn
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="d-flex justify-content-around gap-3">
+                                            <button class="btn btn-default bg-secondary bg-opacity-10 fw-bold px-3">-</button>
+                                            <input type="text" class="form-control">
+                                            <button class="btn btn-default bg-secondary bg-opacity-10 fw-bold text-primary">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm align-self-center fw-medium">
+                                        <i class="bi bi-person-standing text-primary"></i>
+                                        Trẻ em
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="d-flex justify-content-around gap-3">
+                                            <button class="btn btn-default bg-secondary bg-opacity-10 fw-bold px-3">-</button>
+                                            <input type="text" class="form-control">
+                                            <button class="btn btn-default bg-secondary bg-opacity-10 fw-bold text-primary">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm align-self-center fw-medium">
+                                        <i class="bi bi-door-closed-fill text-primary"></i>
+                                        Phòng
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="d-flex justify-content-around gap-3">
+                                            <button class="btn btn-default bg-secondary bg-opacity-10 fw-bold px-3">-</button>
+                                            <input type="text" class="form-control">
+                                            <button class="btn btn-default bg-secondary bg-opacity-10 fw-bold text-primary">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mt-3">
+                                    <div>
+                                        <button class="btn btn-primary fw-medium w-100">Xong</button>
+                                    </div>
+                                </div>
+                            </div> 
+                            
+                            <a href="#!hotelsearch" class="input-group-text bg-primary   rounded-end-circle" id="basic-addon1">
+                                
+                                <i class="bi bi-search text-white fs-4"></i>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="text-center  mt-5 mb-2">
+                                <span class="text-white fst-italic fw-bold mb-3">Trusted by</span>
+                                <img alt="" class="bg-white bg-opacity-50 p-1 rounded-1 ms-2 mb-3" src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/13/1686628936876-6861fc84efcc76f490daf447f960e4c1.png?tr=h-25,q-75">
+                                <img alt="" class="bg-white bg-opacity-50 p-1 rounded-1 ms-2 mb-3" src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/21/1687341566832-ec761b0bc75b8baf1ee23a7d51c6fc8c.png?tr=h-25,q-75">
+                                <img alt="" class="bg-white bg-opacity-50 p-1 rounded-1 ms-2 mb-3" src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/21/1687341574955-2177992f49c83eadf71865314ebd54e6.png?tr=h-25,q-75">
+                                <img alt="" class="bg-white bg-opacity-50 p-1 rounded-1 ms-2 mb-3" src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/21/1687341577044-3fdac49e17f09c5d7a9d988226163c6e.png?tr=h-25,q-75">
+                                <img alt="" class="bg-white bg-opacity-50 p-1 rounded-1 ms-2 mb-3" src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/13/1686628946358-afb0ebf35c0314e0b06884396063d816.png?tr=h-25,q-75">
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nestedSearchTabHolidayStays-tab-pane" role="tabpanel" aria-labelledby="nestedSearchTabHolidayStays-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col text-white p-2 fw-bold">Thành phố, địa điểm hoặc tên khách sạn</div>
+                            <div class="col text-white p-2 fw-bold">Ngày nhận phòng và trả phòng</div>
+                            <div class="col text-white p-2 fw-bold">Khách và phòng</div>
+                        </div>
+                        <div class="input-group position-relative">
+                            
+                            <span class="input-group-text bg-white  rounded-start-circle" id="basic-addon1">
+                                <i class="bi bi-geo-alt-fill text-primary fs-4"></i>
+                            </span>
+                            <input type="text" class="form-control py-3 rounded-0 fw-bold" value="Đà Nẵng" aria-label="Username" aria-describedby="basic-addon1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHotelList" aria-expanded="false" aria-controls="collapseHotelList">
+                            <div class="collapse position-absolute start-0 top-100  custom-width-300px overflow-hidden rounded-3 z-2  border shadow bg-white p-0" id="collapseHotelList">
+                                <div class="card">
+                                    <div class="card-header fw-medium text-black">
+                                        <small class="fw-bold">Kết quả tìm kiếm cuối cùng</small>
+                                    </div>
+                                    <ul class="list-group">
+                                        <li class="list-group-item border-0 rounded-0 px-2">
+                                            <div class="row">
+                                                <div class="col align-self-center">
+                                                    <p class="m-0 fw-bold">Đà Nẵng</p>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <p class="m-0">
+                                                        <span class="badge text-primary border border-primary rounded-pill">Vùng</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="card-header fw-medium text-black">
+                                        <small class="fw-bold">Điểm đến phổ biến</small>
+                                    </div>
+                                    <ul class="list-group">
+                                        <li class="list-group-item border-0 border-bottom rounded-0 px-2">
+                                            <div class="row">
+                                                <div class="col align-self-center">
+                                                    <p class="m-0 fw-bold">Đà Nẵng</p>
+                                                    <p class="m-0 fw-medium">Việt Nam</p>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <p class="m-0">
+                                                        <span class="badge text-primary border border-primary rounded-pill">Vùng</span>
+                                                    </p>
+                                                    <p class="m-0 fw-medium text-primary text-nowrap">
+                                                        <small>1.715 khách sạn</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item border-0 border-bottom rounded-0 px-2">
+                                            <div class="row">
+                                                <div class="col align-self-center">
+                                                    <p class="m-0 fw-bold">Đà Nẵng</p>
+                                                    <p class="m-0 fw-medium">Việt Nam</p>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <p class="m-0">
+                                                        <span class="badge text-primary border border-primary rounded-pill">Vùng</span>
+                                                    </p>
+                                                    <p class="m-0 fw-medium text-primary text-nowrap">
+                                                        <small>1.715 khách sạn</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item border-0 border-bottom rounded-0 px-2">
+                                            <div class="row">
+                                                <div class="col align-self-center">
+                                                    <p class="m-0 fw-bold">Đà Nẵng</p>
+                                                    <p class="m-0 fw-medium">Việt Nam</p>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <p class="m-0">
+                                                        <span class="badge text-primary border border-primary rounded-pill">Vùng</span>
+                                                    </p>
+                                                    <p class="m-0 fw-medium text-primary text-nowrap">
+                                                        <small>1.715 khách sạn</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item border-0 rounded-0 px-2">
+                                            <div class="row">
+                                                <div class="col align-self-center">
+                                                    <p class="m-0 fw-bold">Đà Nẵng</p>
+                                                    <p class="m-0 fw-medium">Việt Nam</p>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <p class="m-0">
+                                                        <span class="badge text-primary border border-primary rounded-pill">Vùng</span>
+                                                    </p>
+                                                    <p class="m-0 fw-medium text-primary text-nowrap">
+                                                        <small>1.715 khách sạn</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <span class="input-group-text rounded-0 bg-white" id="basic-addon1">
+                                <i class="bi bi-calendar3 text-primary fs-4"></i>
+                            </span>
+                            <input type="text" class="form-control py-3 fw-bold  rounded-0" value="16 th 3 2024" aria-label="Username" aria-describedby="basic-addon1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDate" aria-expanded="false" aria-controls="collapseDate">     
+                            <div class="collapse position-absolute start-0 top-100 w-auto rounded z-2 border shadow bg-white p-3" id="collapseDate">
+                                <div class="row border-bottom mt-0">
+                                    <h5>Ngày ở</h5>
+                                </div>
+                                <div class="row gap-0">
+                                    <div class="col-sm-6 p-0">
+                                        <div class="p-2 w-100 border-bottom ">
+                                            <p class="fw-medium text-secondary mb-0">
+                                                <small>Nhận phòng</small>
+                                            </p>
+                                            <p class="fw-bold mb-0">
+                                                Thứ 5, 21 thg 3 2024
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="px-2 py-2">
+                                                        <h6 class="fw-medium">March 2024</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col text-end">
+                                                    <div class="p-2">                      
+                                                        <i class="bi bi-chevron-left text-primary"></i>
+                                                        <i class="bi bi-chevron-right text-primary"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <table class="w-100 border-end">
+                                            <tr class="border-bottom">
+                                                <td class="col fw-medium text-secondary p-2"><small>Mon</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Tue</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Wed</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Thu</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Fri</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Sat</small></td>
+                                                <td class="col fw-medium text-secondary p-2 text-danger"><small>Sun</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td class=""></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">1</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">2</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">3</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">4</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">5</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">6</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">7</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">8</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">9</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">10</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">11</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">12</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">13</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">14</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">15</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">16</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">17</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">18</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">19</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">20</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">21</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">22</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">23</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">24</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">25</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">26</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">27</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">28</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">29</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">30</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">31</h6>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    
+                                    <div class="col-sm-6 p-0">
+                                        <div class="p-2 w-100 border-bottom">
+                                            <p class="fw-medium text-secondary mb-0">
+                                                <small>Nhận phòng</small>
+                                            </p>
+                                            <p class="fw-bold mb-0">
+                                                Thứ 5, 21 thg 3 2024
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="px-3 py-2">
+                                                        <h6 class="fw-medium">March 2024</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <div class="px-2">                      
+                                                        <i class="bi bi-chevron-left text-primary"></i>
+                                                        <i class="bi bi-chevron-right text-primary"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <table class="w-100">
+                                            <tr class="border-bottom">
+                                                <td class="col fw-medium text-secondary p-2"><small>Mon</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Tue</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Wed</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Thu</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Fri</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Sat</small></td>
+                                                <td class="col fw-medium text-secondary p-2 text-danger"><small>Sun</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td class=""></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">1</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">2</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">3</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">4</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">5</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">6</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">7</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">8</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">9</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">10</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">11</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">12</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">13</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">14</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">15</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">16</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">17</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">18</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">19</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">20</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">21</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">22</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">23</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">24</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">25</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">26</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">27</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">28</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">29</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">30</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">31</h6>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>  
+                            
+                            <span class="input-group-text rounded-0 bg-white" id="basic-addon1">
+                                <i class="bi bi-person-badge text-primary fs-4"></i>
+                            </span>
+                            
+                            <input type="text" class="form-control py-3 fw-bold" value="1 khách" aria-label="Username" aria-describedby="basic-addon1"type="button" data-bs-toggle="collapse" data-bs-target="#collapseAmount" aria-expanded="false" aria-controls="collapseAmount">    
+                            <div class="collapse position-absolute end-0 top-100 w-auto rounded z-2 border shadow bg-white p-3" id="collapseAmount">
+                                <div class="row">
+                                    <div class="col-sm align-self-center fw-medium">
+                                        <i class="bi bi-person-standing text-primary"></i>
+                                        Khách
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="d-flex justify-content-around gap-3">
+                                            <button class="btn btn-default bg-secondary bg-opacity-10 fw-bold px-3">-</button>
+                                            <input type="text" class="form-control">
+                                            <button class="btn btn-default bg-secondary bg-opacity-10 fw-bold text-primary">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div>
+                                        <button class="btn btn-primary fw-medium w-100">Xong</button>
+                                    </div>
+                                </div>
+                            </div> 
+                            
+                            <a href="#!hotelsearch" class="input-group-text bg-primary   rounded-end-circle" id="basic-addon1">
+                                
+                                <i class="bi bi-search text-white fs-4"></i>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="text-center  mt-5 mb-2">
+                                <span class="text-white fst-italic fw-bold mb-3">Trusted by</span>
+                                <img alt="" class="bg-white bg-opacity-50 p-1 rounded-1 ms-2 mb-3" src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/13/1686628936876-6861fc84efcc76f490daf447f960e4c1.png?tr=h-25,q-75">
+                                <img alt="" class="bg-white bg-opacity-50 p-1 rounded-1 ms-2 mb-3" src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/21/1687341566832-ec761b0bc75b8baf1ee23a7d51c6fc8c.png?tr=h-25,q-75">
+                                <img alt="" class="bg-white bg-opacity-50 p-1 rounded-1 ms-2 mb-3" src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/21/1687341574955-2177992f49c83eadf71865314ebd54e6.png?tr=h-25,q-75">
+                                <img alt="" class="bg-white bg-opacity-50 p-1 rounded-1 ms-2 mb-3" src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/21/1687341577044-3fdac49e17f09c5d7a9d988226163c6e.png?tr=h-25,q-75">
+                                <img alt="" class="bg-white bg-opacity-50 p-1 rounded-1 ms-2 mb-3" src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/13/1686628946358-afb0ebf35c0314e0b06884396063d816.png?tr=h-25,q-75">
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nestedSearchTabVilla-tab-pane" role="tabpanel" aria-labelledby="nestedSearchTabVilla-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col text-white p-2 fw-bold">Thành phố, địa điểm hoặc tên khách sạn</div>
+                            <div class="col text-white p-2 fw-bold">Ngày nhận phòng và trả phòng</div>
+                            <div class="col text-white p-2 fw-bold">Khách và phòng</div>
+                        </div>
+                        <div class="input-group position-relative">
+                            
+                            <span class="input-group-text bg-white  rounded-start-circle" id="basic-addon1">
+                                <i class="bi bi-geo-alt-fill text-primary fs-4"></i>
+                            </span>
+                            <input type="text" class="form-control py-3 rounded-0 fw-bold" value="Đà Nẵng" aria-label="Username" aria-describedby="basic-addon1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHotelList" aria-expanded="false" aria-controls="collapseHotelList">
+                            <div class="collapse position-absolute start-0 top-100  custom-width-300px overflow-hidden rounded-3 z-2  border shadow bg-white p-0" id="collapseHotelList">
+                                <div class="card">
+                                    <div class="card-header fw-medium text-black">
+                                        <small class="fw-bold">Kết quả tìm kiếm cuối cùng</small>
+                                    </div>
+                                    <ul class="list-group">
+                                        <li class="list-group-item border-0 rounded-0 px-2">
+                                            <div class="row">
+                                                <div class="col align-self-center">
+                                                    <p class="m-0 fw-bold">Đà Nẵng</p>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <p class="m-0">
+                                                        <span class="badge text-primary border border-primary rounded-pill">Vùng</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="card-header fw-medium text-black">
+                                        <small class="fw-bold">Điểm đến phổ biến</small>
+                                    </div>
+                                    <ul class="list-group">
+                                        <li class="list-group-item border-0 border-bottom rounded-0 px-2">
+                                            <div class="row">
+                                                <div class="col align-self-center">
+                                                    <p class="m-0 fw-bold">Đà Nẵng</p>
+                                                    <p class="m-0 fw-medium">Việt Nam</p>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <p class="m-0">
+                                                        <span class="badge text-primary border border-primary rounded-pill">Vùng</span>
+                                                    </p>
+                                                    <p class="m-0 fw-medium text-primary text-nowrap">
+                                                        <small>1.715 khách sạn</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item border-0 border-bottom rounded-0 px-2">
+                                            <div class="row">
+                                                <div class="col align-self-center">
+                                                    <p class="m-0 fw-bold">Đà Nẵng</p>
+                                                    <p class="m-0 fw-medium">Việt Nam</p>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <p class="m-0">
+                                                        <span class="badge text-primary border border-primary rounded-pill">Vùng</span>
+                                                    </p>
+                                                    <p class="m-0 fw-medium text-primary text-nowrap">
+                                                        <small>1.715 khách sạn</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item border-0 border-bottom rounded-0 px-2">
+                                            <div class="row">
+                                                <div class="col align-self-center">
+                                                    <p class="m-0 fw-bold">Đà Nẵng</p>
+                                                    <p class="m-0 fw-medium">Việt Nam</p>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <p class="m-0">
+                                                        <span class="badge text-primary border border-primary rounded-pill">Vùng</span>
+                                                    </p>
+                                                    <p class="m-0 fw-medium text-primary text-nowrap">
+                                                        <small>1.715 khách sạn</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item border-0 rounded-0 px-2">
+                                            <div class="row">
+                                                <div class="col align-self-center">
+                                                    <p class="m-0 fw-bold">Đà Nẵng</p>
+                                                    <p class="m-0 fw-medium">Việt Nam</p>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <p class="m-0">
+                                                        <span class="badge text-primary border border-primary rounded-pill">Vùng</span>
+                                                    </p>
+                                                    <p class="m-0 fw-medium text-primary text-nowrap">
+                                                        <small>1.715 khách sạn</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <span class="input-group-text rounded-0 bg-white" id="basic-addon1">
+                                <i class="bi bi-calendar3 text-primary fs-4"></i>
+                            </span>
+                            <input type="text" class="form-control py-3 fw-bold  rounded-0" value="16 th 3 2024" aria-label="Username" aria-describedby="basic-addon1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDate" aria-expanded="false" aria-controls="collapseDate">     
+                            <div class="collapse position-absolute start-0 top-100 w-auto rounded z-2 border shadow bg-white p-3" id="collapseDate">
+                                <div class="row border-bottom mt-0">
+                                    <h5>Ngày ở</h5>
+                                </div>
+                                <div class="row gap-0">
+                                    <div class="col-sm-6 p-0">
+                                        <div class="p-2 w-100 border-bottom ">
+                                            <p class="fw-medium text-secondary mb-0">
+                                                <small>Nhận phòng</small>
+                                            </p>
+                                            <p class="fw-bold mb-0">
+                                                Thứ 5, 21 thg 3 2024
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="px-2 py-2">
+                                                        <h6 class="fw-medium">March 2024</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col text-end">
+                                                    <div class="p-2">                      
+                                                        <i class="bi bi-chevron-left text-primary"></i>
+                                                        <i class="bi bi-chevron-right text-primary"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <table class="w-100 border-end">
+                                            <tr class="border-bottom">
+                                                <td class="col fw-medium text-secondary p-2"><small>Mon</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Tue</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Wed</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Thu</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Fri</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Sat</small></td>
+                                                <td class="col fw-medium text-secondary p-2 text-danger"><small>Sun</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td class=""></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">1</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">2</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">3</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">4</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">5</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">6</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">7</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">8</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">9</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">10</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">11</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">12</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">13</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">14</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">15</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">16</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">17</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">18</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">19</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">20</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">21</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">22</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">23</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">24</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">25</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">26</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">27</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">28</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">29</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">30</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">31</h6>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    
+                                    <div class="col-sm-6 p-0">
+                                        <div class="p-2 w-100 border-bottom">
+                                            <p class="fw-medium text-secondary mb-0">
+                                                <small>Nhận phòng</small>
+                                            </p>
+                                            <p class="fw-bold mb-0">
+                                                Thứ 5, 21 thg 3 2024
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="px-3 py-2">
+                                                        <h6 class="fw-medium">March 2024</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <div class="px-2">                      
+                                                        <i class="bi bi-chevron-left text-primary"></i>
+                                                        <i class="bi bi-chevron-right text-primary"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <table class="w-100">
+                                            <tr class="border-bottom">
+                                                <td class="col fw-medium text-secondary p-2"><small>Mon</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Tue</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Wed</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Thu</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Fri</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Sat</small></td>
+                                                <td class="col fw-medium text-secondary p-2 text-danger"><small>Sun</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td class=""></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">1</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">2</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">3</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">4</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">5</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">6</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">7</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">8</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">9</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">10</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">11</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">12</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">13</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">14</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">15</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">16</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">17</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">18</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">19</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">20</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">21</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">22</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">23</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">24</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">25</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">26</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">27</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">28</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">29</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">30</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">31</h6>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>  
+                            
+                            <span class="input-group-text rounded-0 bg-white" id="basic-addon1">
+                                <i class="bi bi-person-badge text-primary fs-4"></i>
+                            </span>
+                            
+                            <input type="text" class="form-control py-3 fw-bold" value="1 người lớn, 1 trẻ em, 1 phòng" aria-label="Username" aria-describedby="basic-addon1"type="button" data-bs-toggle="collapse" data-bs-target="#collapseAmount" aria-expanded="false" aria-controls="collapseAmount">    
+                            <div class="collapse position-absolute end-0 top-100 w-auto rounded z-2 border shadow bg-white p-3" id="collapseAmount">
+                                <div class="row">
+                                    <div class="col-sm align-self-center fw-medium">
+                                        <i class="bi bi-person-standing text-primary"></i>
+                                        Người lớn
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="d-flex justify-content-around gap-3">
+                                            <button class="btn btn-default bg-secondary bg-opacity-10 fw-bold px-3">-</button>
+                                            <input type="text" class="form-control">
+                                            <button class="btn btn-default bg-secondary bg-opacity-10 fw-bold text-primary">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm align-self-center fw-medium">
+                                        <i class="bi bi-person-standing text-primary"></i>
+                                        Trẻ em
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="d-flex justify-content-around gap-3">
+                                            <button class="btn btn-default bg-secondary bg-opacity-10 fw-bold px-3">-</button>
+                                            <input type="text" class="form-control">
+                                            <button class="btn btn-default bg-secondary bg-opacity-10 fw-bold text-primary">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm align-self-center fw-medium">
+                                        <i class="bi bi-door-closed-fill text-primary"></i>
+                                        Phòng
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="d-flex justify-content-around gap-3">
+                                            <button class="btn btn-default bg-secondary bg-opacity-10 fw-bold px-3">-</button>
+                                            <input type="text" class="form-control">
+                                            <button class="btn btn-default bg-secondary bg-opacity-10 fw-bold text-primary">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mt-3">
+                                    <div>
+                                        <button class="btn btn-primary fw-medium w-100">Xong</button>
+                                    </div>
+                                </div>
+                            </div> 
+                            
+                            <a href="#!hotelsearch" class="input-group-text bg-primary   rounded-end-circle" id="basic-addon1">
+                                
+                                <i class="bi bi-search text-white fs-4"></i>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="text-center  mt-5 mb-2">
+                                <span class="text-white fst-italic fw-bold mb-3">Trusted by</span>
+                                <img alt="" class="bg-white bg-opacity-50 p-1 rounded-1 ms-2 mb-3" src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/13/1686628936876-6861fc84efcc76f490daf447f960e4c1.png?tr=h-25,q-75">
+                                <img alt="" class="bg-white bg-opacity-50 p-1 rounded-1 ms-2 mb-3" src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/21/1687341566832-ec761b0bc75b8baf1ee23a7d51c6fc8c.png?tr=h-25,q-75">
+                                <img alt="" class="bg-white bg-opacity-50 p-1 rounded-1 ms-2 mb-3" src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/21/1687341574955-2177992f49c83eadf71865314ebd54e6.png?tr=h-25,q-75">
+                                <img alt="" class="bg-white bg-opacity-50 p-1 rounded-1 ms-2 mb-3" src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/21/1687341577044-3fdac49e17f09c5d7a9d988226163c6e.png?tr=h-25,q-75">
+                                <img alt="" class="bg-white bg-opacity-50 p-1 rounded-1 ms-2 mb-3" src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/13/1686628946358-afb0ebf35c0314e0b06884396063d816.png?tr=h-25,q-75">
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nestedSearchTabApartment-tab-pane" role="tabpanel" aria-labelledby="nestedSearchTabApartment-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col text-white p-2 fw-bold">Thành phố, địa điểm hoặc tên khách sạn</div>
+                            <div class="col text-white p-2 fw-bold">Ngày nhận phòng và trả phòng</div>
+                            <div class="col text-white p-2 fw-bold">Khách và phòng</div>
+                        </div>
+                        <div class="input-group position-relative">
+                            
+                            <span class="input-group-text bg-white  rounded-start-circle" id="basic-addon1">
+                                <i class="bi bi-geo-alt-fill text-primary fs-4"></i>
+                            </span>
+                            <input type="text" class="form-control py-3 rounded-0 fw-bold" value="Đà Nẵng" aria-label="Username" aria-describedby="basic-addon1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHotelList" aria-expanded="false" aria-controls="collapseHotelList">
+                            <div class="collapse position-absolute start-0 top-100  custom-width-300px overflow-hidden rounded-3 z-2  border shadow bg-white p-0" id="collapseHotelList">
+                                <div class="card">
+                                    <div class="card-header fw-medium text-black">
+                                        <small class="fw-bold">Kết quả tìm kiếm cuối cùng</small>
+                                    </div>
+                                    <ul class="list-group">
+                                        <li class="list-group-item border-0 rounded-0 px-2">
+                                            <div class="row">
+                                                <div class="col align-self-center">
+                                                    <p class="m-0 fw-bold">Đà Nẵng</p>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <p class="m-0">
+                                                        <span class="badge text-primary border border-primary rounded-pill">Vùng</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="card-header fw-medium text-black">
+                                        <small class="fw-bold">Điểm đến phổ biến</small>
+                                    </div>
+                                    <ul class="list-group">
+                                        <li class="list-group-item border-0 border-bottom rounded-0 px-2">
+                                            <div class="row">
+                                                <div class="col align-self-center">
+                                                    <p class="m-0 fw-bold">Đà Nẵng</p>
+                                                    <p class="m-0 fw-medium">Việt Nam</p>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <p class="m-0">
+                                                        <span class="badge text-primary border border-primary rounded-pill">Vùng</span>
+                                                    </p>
+                                                    <p class="m-0 fw-medium text-primary text-nowrap">
+                                                        <small>1.715 khách sạn</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item border-0 border-bottom rounded-0 px-2">
+                                            <div class="row">
+                                                <div class="col align-self-center">
+                                                    <p class="m-0 fw-bold">Đà Nẵng</p>
+                                                    <p class="m-0 fw-medium">Việt Nam</p>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <p class="m-0">
+                                                        <span class="badge text-primary border border-primary rounded-pill">Vùng</span>
+                                                    </p>
+                                                    <p class="m-0 fw-medium text-primary text-nowrap">
+                                                        <small>1.715 khách sạn</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item border-0 border-bottom rounded-0 px-2">
+                                            <div class="row">
+                                                <div class="col align-self-center">
+                                                    <p class="m-0 fw-bold">Đà Nẵng</p>
+                                                    <p class="m-0 fw-medium">Việt Nam</p>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <p class="m-0">
+                                                        <span class="badge text-primary border border-primary rounded-pill">Vùng</span>
+                                                    </p>
+                                                    <p class="m-0 fw-medium text-primary text-nowrap">
+                                                        <small>1.715 khách sạn</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item border-0 rounded-0 px-2">
+                                            <div class="row">
+                                                <div class="col align-self-center">
+                                                    <p class="m-0 fw-bold">Đà Nẵng</p>
+                                                    <p class="m-0 fw-medium">Việt Nam</p>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <p class="m-0">
+                                                        <span class="badge text-primary border border-primary rounded-pill">Vùng</span>
+                                                    </p>
+                                                    <p class="m-0 fw-medium text-primary text-nowrap">
+                                                        <small>1.715 khách sạn</small>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <span class="input-group-text rounded-0 bg-white" id="basic-addon1">
+                                <i class="bi bi-calendar3 text-primary fs-4"></i>
+                            </span>
+                            <input type="text" class="form-control py-3 fw-bold  rounded-0" value="16 th 3 2024" aria-label="Username" aria-describedby="basic-addon1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDate" aria-expanded="false" aria-controls="collapseDate">     
+                            <div class="collapse position-absolute start-0 top-100 w-auto rounded z-2 border shadow bg-white p-3" id="collapseDate">
+                                <div class="row border-bottom mt-0">
+                                    <h5>Ngày ở</h5>
+                                </div>
+                                <div class="row gap-0">
+                                    <div class="col-sm-6 p-0">
+                                        <div class="p-2 w-100 border-bottom ">
+                                            <p class="fw-medium text-secondary mb-0">
+                                                <small>Nhận phòng</small>
+                                            </p>
+                                            <p class="fw-bold mb-0">
+                                                Thứ 5, 21 thg 3 2024
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="px-2 py-2">
+                                                        <h6 class="fw-medium">March 2024</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col text-end">
+                                                    <div class="p-2">                      
+                                                        <i class="bi bi-chevron-left text-primary"></i>
+                                                        <i class="bi bi-chevron-right text-primary"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <table class="w-100 border-end">
+                                            <tr class="border-bottom">
+                                                <td class="col fw-medium text-secondary p-2"><small>Mon</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Tue</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Wed</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Thu</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Fri</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Sat</small></td>
+                                                <td class="col fw-medium text-secondary p-2 text-danger"><small>Sun</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td class=""></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">1</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">2</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">3</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">4</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">5</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">6</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">7</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">8</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">9</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">10</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">11</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">12</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">13</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">14</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">15</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">16</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">17</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">18</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">19</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">20</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">21</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">22</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">23</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">24</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">25</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">26</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">27</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">28</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">29</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">30</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">31</h6>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    
+                                    <div class="col-sm-6 p-0">
+                                        <div class="p-2 w-100 border-bottom">
+                                            <p class="fw-medium text-secondary mb-0">
+                                                <small>Nhận phòng</small>
+                                            </p>
+                                            <p class="fw-bold mb-0">
+                                                Thứ 5, 21 thg 3 2024
+                                            </p>
+                                        </div>
+                                        <div class="">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="px-3 py-2">
+                                                        <h6 class="fw-medium">March 2024</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col text-end align-self-center">
+                                                    <div class="px-2">                      
+                                                        <i class="bi bi-chevron-left text-primary"></i>
+                                                        <i class="bi bi-chevron-right text-primary"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <table class="w-100">
+                                            <tr class="border-bottom">
+                                                <td class="col fw-medium text-secondary p-2"><small>Mon</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Tue</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Wed</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Thu</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Fri</small></td>
+                                                <td class="col fw-medium text-secondary p-2"><small>Sat</small></td>
+                                                <td class="col fw-medium text-secondary p-2 text-danger"><small>Sun</small></td>
+                                            </tr>
+                                            <tr>
+                                                <td class=""></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">1</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">2</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">3</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">4</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">5</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">6</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">7</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">8</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">9</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">10</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">11</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">12</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">13</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">14</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">15</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">16</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">17</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">18</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">19</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">20</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">21</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">22</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">23</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">24</h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">25</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">26</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">27</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">28</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">29</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center">30</h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="btn fw-medium text-center text-danger">31</h6>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>  
+                            
+                            <span class="input-group-text rounded-0 bg-white" id="basic-addon1">
+                                <i class="bi bi-person-badge text-primary fs-4"></i>
+                            </span>
+                            
+                            <input type="text" class="form-control py-3 fw-bold" value="1 người lớn, 1 trẻ em, 1 phòng" aria-label="Username" aria-describedby="basic-addon1"type="button" data-bs-toggle="collapse" data-bs-target="#collapseAmount" aria-expanded="false" aria-controls="collapseAmount">    
+                            <div class="collapse position-absolute end-0 top-100 w-auto rounded z-2 border shadow bg-white p-3" id="collapseAmount">
+                                <div class="row">
+                                    <div class="col-sm align-self-center fw-medium">
+                                        <i class="bi bi-person-standing text-primary"></i>
+                                        Người lớn
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="d-flex justify-content-around gap-3">
+                                            <button class="btn btn-default bg-secondary bg-opacity-10 fw-bold px-3">-</button>
+                                            <input type="text" class="form-control">
+                                            <button class="btn btn-default bg-secondary bg-opacity-10 fw-bold text-primary">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm align-self-center fw-medium">
+                                        <i class="bi bi-person-standing text-primary"></i>
+                                        Trẻ em
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="d-flex justify-content-around gap-3">
+                                            <button class="btn btn-default bg-secondary bg-opacity-10 fw-bold px-3">-</button>
+                                            <input type="text" class="form-control">
+                                            <button class="btn btn-default bg-secondary bg-opacity-10 fw-bold text-primary">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm align-self-center fw-medium">
+                                        <i class="bi bi-door-closed-fill text-primary"></i>
+                                        Phòng
+                                    </div>
+                                    <div class="col-sm">
+                                        <div class="d-flex justify-content-around gap-3">
+                                            <button class="btn btn-default bg-secondary bg-opacity-10 fw-bold px-3">-</button>
+                                            <input type="text" class="form-control">
+                                            <button class="btn btn-default bg-secondary bg-opacity-10 fw-bold text-primary">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mt-3">
+                                    <div>
+                                        <button class="btn btn-primary fw-medium w-100">Xong</button>
+                                    </div>
+                                </div>
+                            </div> 
+                            
+                            <a href="#!hotelsearch" class="input-group-text bg-primary   rounded-end-circle" id="basic-addon1">
+                                
+                                <i class="bi bi-search text-white fs-4"></i>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="text-center  mt-5 mb-2">
+                                <span class="text-white fst-italic fw-bold mb-3">Trusted by</span>
+                                <img alt="" class="bg-white bg-opacity-50 p-1 rounded-1 ms-2 mb-3" src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/13/1686628936876-6861fc84efcc76f490daf447f960e4c1.png?tr=h-25,q-75">
+                                <img alt="" class="bg-white bg-opacity-50 p-1 rounded-1 ms-2 mb-3" src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/21/1687341566832-ec761b0bc75b8baf1ee23a7d51c6fc8c.png?tr=h-25,q-75">
+                                <img alt="" class="bg-white bg-opacity-50 p-1 rounded-1 ms-2 mb-3" src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/21/1687341574955-2177992f49c83eadf71865314ebd54e6.png?tr=h-25,q-75">
+                                <img alt="" class="bg-white bg-opacity-50 p-1 rounded-1 ms-2 mb-3" src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/21/1687341577044-3fdac49e17f09c5d7a9d988226163c6e.png?tr=h-25,q-75">
+                                <img alt="" class="bg-white bg-opacity-50 p-1 rounded-1 ms-2 mb-3" src="https://ik.imagekit.io/tvlk/image/imageResource/2023/06/13/1686628946358-afb0ebf35c0314e0b06884396063d816.png?tr=h-25,q-75">
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="searchTabAirlineTicket-tab-pane" role="tabpanel" aria-labelledby="searchTabAirlineTicket-tab" tabindex="0">...</div>
+            <div class="tab-pane fade" id="searchTabBusTicket-tab-pane" role="tabpanel" aria-labelledby="searchTabBusTicket-tab" tabindex="0">...</div>
+        </div>
+    </div>
+
+    
+</div>
+
+<div class="container">
+    <img src="image/banner2.webp" alt="" class="img-fluid mt-5">
+    <img src="image/banner3.webp" alt="" class="img-fluid mt-5">
+    <div class="container hstack gap-4 overflow-x-scroll mt-5">
+        <img src="image/cndl.webp" class="d-block w-25" alt="...">
+        <img src="image/bali.webp" class="d-block w-25" alt="...">
+        <img src="image/singapore.webp" class="d-block w-25" alt="...">
+        <img src="image/kualalumpur.webp" class="d-block w-25" alt="...">
+        <img src="image/chiangmai.webp" class="d-block w-25" alt="...">
+    </div>
+    <h5 class="mt-5 fw-bold text-dark">Nâng tầm chuyến đi theo cách bạn muốn</h5>
+    <div class="container">
+        <div class="row gap-3 ">
+            <div class="card col-sm p-0 mt-3">
+                <img src="image/card1.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Chuyến đi và danh thắng</h5>
+                </div>
+            </div>
+            <div class="card col-sm p-0 mt-3">
+                <img src="image/card2.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Fun activities</h5>
+                </div>
+            </div>
+            <div class="card col-sm p-0 mt-3">
+                <img src="image/card3.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Travel insurance</h5>
+                </div>
+            </div>
+            <div class="card col-sm p-0 mt-3">
+                <img src="image/card4.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Đặt trước, trả sau</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h5 class="mt-5 fw-bold text-dark">Tái khám phá bản thân ở châu Á và những nơi khác</h5>
+    <div class="container">
+        <div class="row gap-3 mt-3">
+            <div class="col-sm card p-0">
+                <img src="image/vietnambg.webp" class="card-img" alt="...">
+                <div class="card-img-overlay ps-3 pt-3">
+                    <h5 class="fw-bold card-title text-white">Việt Nam</h5>
+                    <p class="card-text text-white">10,000 accommodations</p>
+                </div>
+            </div>
+            <div class="col-sm card p-0">
+                <img src="image/thailanbg.webp" class="card-img" alt="...">
+                <div class="card-img-overlay ps-3 pt-3">
+                    <h5 class="fw-bold card-title text-white">Thái Lan</h5>
+                    <p class="card-text text-white">10,000 accommodations</p>
+                </div>
+            </div>
+            <div class="col-sm card p-0">
+                <img src="image/singaporebg.webp" class="card-img" alt="...">
+                <div class="card-img-overlay ps-3 pt-3">
+                    <h5 class="fw-bold card-title text-white">Singapore</h5>
+                    <p class="card-text text-white">10,000 accommodations</p>
+                </div>
+            </div>
+        </div>
+        <div class="row  gap-3 mt-3">
+            <div class="col-sm card p-0">
+                <img src="image/malaysiabg.webp" class="card-img" alt="...">
+                <div class="card-img-overlay ps-3 pt-3">
+                    <h5 class="fw-bold card-title text-white">Malaysia</h5>
+                    <p class="card-text text-white">10,000 accommodations</p>
+                </div>
+            </div>
+            <div class="col-sm card p-0">
+                <img src="image/indonesiabg.webp" class="card-img" alt="...">
+                <div class="card-img-overlay ps-3 pt-3">
+                    <h5 class="fw-bold card-title text-white">Indonesia</h5>
+                    <p class="card-text text-white">10,000 accommodations</p>
+                </div>
+            </div>
+            <div class="col-sm card p-0">
+                <img src="image/hanquocbg.webp" class="card-img" alt="...">
+                <div class="card-img-overlay ps-3 pt-3">
+                    <h5 class="fw-bold card-title text-white">Hàn Quốc</h5>
+                    <p class="card-text text-white">10,000 accommodations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h5 class="mt-5 fw-bold text-dark">Không thể không đên</h5>
+    <h5 class="mt-1 fw-bold text-secondary">Đi cùng người thân vừa vui vừa thích</h5>
+    <ul class="nav nav-pills mt-3" id="pills-tab3" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link me-3 active rounded-pill fw-bold" id="pills-att-tab" data-bs-toggle="pill" data-bs-target="#pills-att" type="button" role="tab" aria-controls="pills-att" aria-selected="true">
+            Attraction
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link me-3 rounded-pill fw-bold" id="pills-tour-tab" data-bs-toggle="pill" data-bs-target="#pills-tour" type="button" role="tab" aria-controls="pills-tour" aria-selected="false">
+            Tour
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link me-3 rounded-pill fw-bold" id="pills-pg-tab" data-bs-toggle="pill" data-bs-target="#pills-pg" type="button" role="tab" aria-controls="pills-pg" aria-selected="false">
+            Playground
+          </button>
+        </li>
+    </ul>
+    <div class="tab-content mt-2" id="pills-tab3Content">
+        <div class="tab-pane fade show active" id="pills-att" role="tabpanel" aria-labelledby="pills-att-tab" tabindex="0">      
+            <div class="row gap-3 ">
+                <div class="card col-sm p-0 mt-3 position-relative">
+                    <span class="position-absolute top-0 start-0  badge rounded-0 rounded-end-2 bg-danger p-2">
+                        Xã Thạch Tân
+                      </span>
+                    <img src="image/thanhtan.webp" class="card-img-top" alt="...">
+                    <div class="card-body pb-0">
+                      <h6 class="card-title mb-1">Sun World Ba Den Mountain</h6>
+                      <p class="text-danger text-opacity-75 mb-2 fw-bold"><small>VND 250.000</small></p>
+                    </div>
+                </div>
+                <div class="card col-sm p-0 mt-3 position-relative">
+                    <span class="position-absolute top-0 start-0  badge rounded-0 rounded-end-2 bg-danger p-2">
+                        Xã Vĩnh Trường
+                      </span>
+                    <img src="image/vinhtruong.webp" class="card-img-top" alt="...">
+                    <div class="card-body pb-0">
+                      <h6 class="card-title mb-1">Vé VinWonders Nha Trang</h6>
+                      <p class="text-secondary mb-0 text-decoration-line-through"><stroke>VND 100.000</stroke></p>
+                      <p class="text-danger text-opacity-75mb-2 fw-bold"><small>VND 60.000</small></p>
+                    </div>
+                </div>
+                <div class="card col-sm p-0 mt-3 position-relative">
+                    <span class="position-absolute top-0 start-0  badge rounded-0 rounded-end-2 bg-danger p-2">
+                        Xã Hòa Vang
+                      </span>
+                    <img src="image/hoavang.webp" class="card-img-top" alt="...">
+                    <div class="card-body pb-0">
+                      <h6 class="card-title mb-1">Sun World Ba Na Hills tại Đà Nẵng</h6>
+                      <p class="text-secondary mb-0 text-decoration-line-through"><stroke>VND 200.000</stroke></p>
+                      <p class="text-danger text-opacity-75 mb-2 fw-bold"><small>VND 160.000</small></p>
+                    </div>
+                </div>
+                <div class="card col-sm p-0 mt-3 position-relative">
+                    <span class="position-absolute top-0 start-0  badge rounded-0 rounded-end-2 bg-danger p-2">
+                        Xã An Hòa
+                      </span>
+                    <img src="image/anhoa.webp" class="card-img-top" alt="...">
+                    <div class="card-body pb-0">
+                      <h6 class="card-title mb-1">Vé công viên nước The Amzing Bay</h6>
+                      <p class="text-secondary mb-0 text-decoration-line-through"><stroke>VND 450.000</stroke></p>
+                      <p class="text-danger text-opacity-75 mb-2 fw-bold"><small>VND 407.000</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-tour" role="tabpanel" aria-labelledby="pills-tour-tab" tabindex="0">
+            <div class="row gap-3 ">
+                <div class="card col-sm p-0 mt-3 position-relative">
+                    <span class="position-absolute top-0 start-0  badge rounded-0 rounded-end-2 bg-danger p-2">
+                        Hòa Ninh
+                      </span>
+                    <img src="image/hoaning.webp" class="card-img-top" alt="...">
+                    <div class="card-body pb-0">
+                      <h6 class="card-title mb-1">Tour khám phá Bà Nà Hills (Cầu Vàng Đã Nẵng) - 1 ngày</h6>
+                      <p class="text-secondary mb-0 text-decoration-line-through"><stroke>VND 100.000</stroke></p>
+                      <p class="text-danger text-opacity-75 mb-2 fw-bold"><small>VND 250.000</small></p>
+                    </div>
+                </div>
+                <div class="card col-sm p-0 mt-3 position-relative">
+                    <span class="position-absolute top-0 start-0  badge rounded-0 rounded-end-2 bg-danger p-2">
+                        Tân Lập
+                      </span>
+                    <img src="image/tanlap.webp" class="card-img-top" alt="...">
+                    <div class="card-body pb-0">
+                      <h6 class="card-title mb-1">Tour đảo VIP Nha Trang (Lặn ống thở, Tắm bùn, Bữa trưa hải sản) - 1 ngày</h6>
+                      <p class="text-secondary mb-0 text-decoration-line-through"><stroke>VND 100.000</stroke></p>
+                      <p class="text-danger text-opacity-75mb-2 fw-bold"><small>VND 60.000</small></p>
+                    </div>
+                </div>
+                <div class="card col-sm p-0 mt-3 position-relative">
+                    <span class="position-absolute top-0 start-0  badge rounded-0 rounded-end-2 bg-danger p-2">
+                        Hòa Ninh
+                      </span>
+                    <img src="image/hoaning.webp" class="card-img-top" alt="...">
+                    <div class="card-body pb-0">
+                      <h6 class="card-title mb-1">Tour khám phá Bà Nà Hills (Cầu Vàng Đã Nẵng) - 1 ngày</h6>
+                      <p class="text-secondary mb-0 text-decoration-line-through"><stroke>VND 100.000</stroke></p>
+                      <p class="text-danger text-opacity-75 mb-2 fw-bold"><small>VND 250.000</small></p>
+                    </div>
+                </div>
+                <div class="card col-sm p-0 mt-3 position-relative">
+                    <span class="position-absolute top-0 start-0  badge rounded-0 rounded-end-2 bg-danger p-2">
+                        Tân Lập
+                      </span>
+                    <img src="image/tanlap.webp" class="card-img-top" alt="...">
+                    <div class="card-body pb-0">
+                      <h6 class="card-title mb-1">Tour đảo VIP Nha Trang (Lặn ống thở, Tắm bùn, Bữa trưa hải sản) - 1 ngày</h6>
+                      <p class="text-secondary mb-0 text-decoration-line-through"><stroke>VND 100.000</stroke></p>
+                      <p class="text-danger text-opacity-75mb-2 fw-bold"><small>VND 60.000</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-pg" role="tabpanel" aria-labelledby="pills-pg-tab" tabindex="0">
+            <div class="row gap-3 ">
+                <div class="card col-sm p-0 mt-3 position-relative">
+                    <span class="position-absolute top-0 start-0  badge rounded-0 rounded-end-2 bg-danger p-2">
+                        Hòa Ninh
+                      </span>
+                    <img src="image/hoaning.webp" class="card-img-top" alt="...">
+                    <div class="card-body pb-0">
+                      <h6 class="card-title mb-1">Tour khám phá Bà Nà Hills (Cầu Vàng Đã Nẵng) - 1 ngày</h6>
+                      <p class="text-secondary mb-0 text-decoration-line-through"><stroke>VND 100.000</stroke></p>
+                      <p class="text-danger text-opacity-75 mb-2 fw-bold"><small>VND 250.000</small></p>
+                    </div>
+                </div>
+                <div class="card col-sm p-0 mt-3 position-relative">
+                    <span class="position-absolute top-0 start-0  badge rounded-0 rounded-end-2 bg-danger p-2">
+                        Tân Lập
+                      </span>
+                    <img src="image/tanlap.webp" class="card-img-top" alt="...">
+                    <div class="card-body pb-0">
+                      <h6 class="card-title mb-1">Tour đảo VIP Nha Trang (Lặn ống thở, Tắm bùn, Bữa trưa hải sản) - 1 ngày</h6>
+                      <p class="text-secondary mb-0 text-decoration-line-through"><stroke>VND 100.000</stroke></p>
+                      <p class="text-danger text-opacity-75mb-2 fw-bold"><small>VND 60.000</small></p>
+                    </div>
+                </div>
+                <div class="card col-sm p-0 mt-3 position-relative">
+                    <span class="position-absolute top-0 start-0  badge rounded-0 rounded-end-2 bg-danger p-2">
+                        Hòa Ninh
+                      </span>
+                    <img src="image/hoaning.webp" class="card-img-top" alt="...">
+                    <div class="card-body pb-0">
+                      <h6 class="card-title mb-1">Tour khám phá Bà Nà Hills (Cầu Vàng Đã Nẵng) - 1 ngày</h6>
+                      <p class="text-secondary mb-0 text-decoration-line-through"><stroke>VND 100.000</stroke></p>
+                      <p class="text-danger text-opacity-75 mb-2 fw-bold"><small>VND 250.000</small></p>
+                    </div>
+                </div>
+                <div class="card col-sm p-0 mt-3 position-relative">
+                    <span class="position-absolute top-0 start-0  badge rounded-0 rounded-end-2 bg-danger p-2">
+                        Tân Lập
+                      </span>
+                    <img src="image/tanlap.webp" class="card-img-top" alt="...">
+                    <div class="card-body pb-0">
+                      <h6 class="card-title mb-1">Tour đảo VIP Nha Trang (Lặn ống thở, Tắm bùn, Bữa trưa hải sản) - 1 ngày</h6>
+                      <p class="text-secondary mb-0 text-decoration-line-through"><stroke>VND 100.000</stroke></p>
+                      <p class="text-danger text-opacity-75mb-2 fw-bold"><small>VND 60.000</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-3">
+        <button class="btn bg-primary bg-opacity-10 text-primary fw-bold px-3 py-2">Xem tất cả<i class="ms-3 bi bi-caret-right-fill"></i></button>
+    </div>
+    <h5 class="mt-5 fw-bold text-dark">Du hành quốc tế: nhận hướng dẫn</h5>
+    <div class="row gap-3 mt-3">
+        <div class="card p-0 col">
+            <img src="image/balibg.webp" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title text-white">Bali</h5>
+              <p class="card-text text-white">Indonesia</p>
+            </div>
+        </div>
+        <div class="card p-0 col">
+            <img src="image/bangkokbg.webp" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title text-white">bangkok</h5>
+              <p class="card-text text-white">Thailand</p>
+            </div>
+        </div>
+        <div class="card p-0 col">
+            <img src="image/seoulbg.webp" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title text-white">Seoul</h5>
+              <p class="card-text text-white">South Korea</p>
+            </div>
+        </div>
+        <div class="card p-0 col">
+            <img src="image/istanbulbg.webp" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title text-white">Istanbul</h5>
+              <p class="card-text text-white">Turket</p>
+            </div>
+        </div>
+        <div class="card p-0 col">
+            <img src="image/liverpoolbg.webp" class="card-img" alt="...">
+            <div class="card-img-overlay">
+              <h5 class="card-title text-white">Liverpool</h5>
+              <p class="card-text text-white">United Kingdom</p>
+            </div>
+        </div>
+    </div>
+    <h5 class="mt-5 fw-bold text-dark">Lý do nên đặt chỗ với Traveloka</h5>
+    <div class="container mt-3" style="background-image: url(image/banner4.webp); background-size: cover;">
+        <div class="row gap-3">
+            <div class="col-sm border rounded-2 p-2 bg-white bg-opacity-50">
+                <table class="border-0">
+                    <tr>
+                        <td rowspan="2" class="b">
+                            <img src="image/ld1.webp" alt="">
+                        </td>
+                        <td><strong>Đáp ứng mọi nhu cầu của bạn</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Từ chuyến bay, lưu trú, đến điểm tham quan, bạn có thể tin chọn sản phẩm hoàn chỉnh và Hướng Dẫn Du Lịch  của chúng tôi.</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm border rounded-2 p-2 bg-white bg-opacity-50">
+                <table class="border-0">
+                    <tr>
+                        <td rowspan="2" class="b">
+                            <img src="image/ld2.webp" alt="">
+                        </td>
+                        <td><strong>Đáp ứng mọi nhu cầu của bạn</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Từ chuyến bay, lưu trú, đến điểm tham quan, bạn có thể tin chọn sản phẩm hoàn chỉnh và Hướng Dẫn Du Lịch  của chúng tôi.</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm border rounded-2 p-2 bg-white bg-opacity-50">
+                <table class="border-0">
+                    <tr>
+                        <td rowspan="2" class="b">
+                            <img src="image/ld3.webp" alt="">
+                        </td>
+                        <td><strong>Đáp ứng mọi nhu cầu của bạn</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Từ chuyến bay, lưu trú, đến điểm tham quan, bạn có thể tin chọn sản phẩm hoàn chỉnh và Hướng Dẫn Du Lịch  của chúng tôi.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 border px-5 py-4">
+        <h5 class=" fw-bold text-dark">Bạn muốn khám phá điều gì?</h5>
+        
+        <ul class="nav nav-tabs" id="tab3" role="tablist">
+            <li class="nav-item me-4 mb-3" role="presentation">
+                <button class="nav-link rounded-pill text-primary py-1 bg-dark bg-opacity-50 active bg-white border-0 p-0" id="cbhd-tab" data-bs-toggle="tab" data-bs-target="#cbhd-tab-pane" type="button" role="tab" aria-controls="cbhd-tab-pane" aria-selected="true">
+                    <strong class="fs-6 text">
+                        Các chặng bay hàng đầu
+                    </strong>
+                </button>
+            </li>
+            <li class="nav-item me-4 mb-3" role="presentation">
+                <button class="nav-link rounded-pill text-primary py-1 bg-dark bg-opacity-50 bg-white border-0 p-0" id="kshd-tab" data-bs-toggle="tab" data-bs-target="#kshd-tab-pane" type="button" role="tab" aria-controls="kshd-tab-pane" aria-selected="false">
+                    <strong class="fs-6 text">
+                        Các khách sạn hàng đầu
+                    </strong>
+                </button>
+            </li>
+            <li class="nav-item me-4 mb-3" role="presentation">
+                <button class="nav-link rounded-pill text-primary py-1 bg-dark bg-opacity-50 bg-white border-0 p-0" id="vmbvks-tab" data-bs-toggle="tab" data-bs-target="#vmbvks-tab-pane" type="button" role="tab" aria-controls="vmbvks-tab-pane" aria-selected="false">
+                    <strong>
+                        Combo vé may bay và khách sạn
+                    </strong>
+                </button>
+            </li>
+            <li class="nav-item me-4 mb-3" role="presentation">
+                <button class="nav-link rounded-pill text-primary py-1 bg-dark bg-opacity-50 bg-white border-0 p-0" id="tqvgt-tab" data-bs-toggle="tab" data-bs-target="#tqvgt-tab-pane" type="button" role="tab" aria-controls="tqvgt-tab-pane" aria-selected="false">
+                    <strong>
+                        Hoạt động tham quan và giải trí
+                    </strong>
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="tab3Content">
+            <div class="tab-pane fade show active" id="cbhd-tab-pane" role="tabpanel" aria-labelledby="kshd-tab" tabindex="0">
+                <div class="row gap-3 mt-3">
+                    <div class="col-sm px-4">
+                        <h6 class="text-secondary mb-4">Vé may bay đi Phú Quốc</h6>
+                        <h6 class="text-secondary mb-4">Vé may bay đi Nha Trang</h6>
+                        <h6 class="text-secondary mb-4">Vé may bay đi Hà Nội</h6>
+                        <h6 class="text-secondary mb-4">Vé may bay đi Đà Lạt</h6>
+                        <h6 class="text-secondary mb-4">Vé may bay đi Đà Nẵng</h6>
+                        <h6 class="text-secondary">Vé may bay đi Hải Phòng</h6>
+                    </div>
+                    <div class="col-sm px-4">
+                        <h6 class="text-secondary mb-4">Vé may bay đi Phú Quốc</h6>
+                        <h6 class="text-secondary mb-4">Vé may bay đi Nha Trang</h6>
+                        <h6 class="text-secondary mb-4">Vé may bay đi Hà Nọi</h6>
+                        <h6 class="text-secondary mb-4">Vé may bay đi Đà Lạt</h6>
+                        <h6 class="text-secondary mb-4">Vé may bay đi Đà Nẵng</h6>
+                        <h6 class="text-secondary">Vé may bay đi Hải Phòng</h6>
+                    </div>
+                    <div class="col-sm px-4">
+                        <h6 class="text-secondary mb-4">Vé may bay đi Phú Quốc</h6>
+                        <h6 class="text-secondary mb-4">Vé may bay đi Nha Trang</h6>
+                        <h6 class="text-secondary mb-4">Vé may bay đi Hà Nọi</h6>
+                        <h6 class="text-secondary mb-4">Vé may bay đi Đà Lạt</h6>
+                        <h6 class="text-secondary mb-4">Vé may bay đi Đà Nẵng</h6>
+                        <h6 class="text-secondary">Vé may bay đi Hải Phòng</h6>
+                    </div>
+                    <div class="col-sm px-4">
+                        <h6 class="text-secondary mb-4">Vé may bay đi Phú Quốc</h6>
+                        <h6 class="text-secondary mb-4">Vé may bay đi Nha Trang</h6>
+                        <h6 class="text-secondary mb-4">Vé may bay đi Hà Nọi</h6>
+                        <h6 class="text-secondary mb-4">Vé may bay đi Đà Lạt</h6>
+                        <h6 class="text-secondary mb-4">Vé may bay đi Đà Nẵng</h6>
+                        <h6 class="text-secondary">Vé may bay đi Hải Phòng</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="kshd-tab-pane" role="tabpanel" aria-labelledby="kshd-tab" tabindex="0">
+                <div class="row gap-3 mt-3">
+                    <div class="col-sm px-4">
+                        <h6 class="text-secondary mb-4">Khách sạn Vũng Tàu</h6>
+                        <h6 class="text-secondary mb-4">Khách sạn Đà Lạt</h6>
+                        <h6 class="text-secondary mb-4">Khách sạn Đà Nẵng</h6>
+                        <h6 class="text-secondary">Khách sạn Hồ Chí Minh</h6>
+                    </div>
+                    <div class="col-sm px-4">
+                        <h6 class="text-secondary mb-4">Khách sạn Nha Trang</h6>
+                        <h6 class="text-secondary mb-4">Khách sạn Hội An</h6>
+                        <h6 class="text-secondary mb-4">Khách sạn Sa Pa</h6>
+                        <h6 class="text-secondary">Khách sạn Hà Nội</h6>
+                    </div>
+                    <div class="col-sm px-4">
+                        <h6 class="text-secondary mb-4">Khách sạn Phan Thiết</h6>
+                        <h6 class="text-secondary mb-4">Khách sạn Phú Quốc</h6>
+                        <h6 class="text-secondary mb-4">Khách sạn Quy Nhơn</h6>
+                        <h6 class="text-secondary">Vé máy bay Tết</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="vmbvks-tab-pane" role="tabpanel" aria-labelledby="vmbvks-tab" tabindex="0">
+                <div class="row gap-3 mt-3">
+                    <div class="col-sm px-4">
+                        <h6 class="text-secondary mb-4">Combo du lịch TP Hồ Chí Minh</h6>
+                        <h6 class="text-secondary">Combo du lịch Hà Nội</h6>
+                    </div>
+                    <div class="col-sm px-4">
+                        <h6 class="text-secondary mb-4">Combo du lịch Đà Nẵng</h6>
+                        <h6 class="text-secondary">Combo du lịch Singapore</h6>
+                    </div>
+                    <div class="col-sm px-4">
+                        <h6 class="text-secondary mb-4">Combo du lịch Nha Trang</h6>
+                        <h6 class="text-secondary">Combo du lịch Phú Quốc</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tqvgt-tab-pane" role="tabpanel" aria-labelledby="tqvgt-tab" tabindex="0">
+                <div class="row gap-3 mt-3">
+                    <div class="col-sm px-4">
+                        <h6 class="text-secondary mb-4">Hoạt động Tham quan & Giải trí tại TP. HCM</h6>
+                        <h6 class="text-secondary mb-4">Hoạt động Tham quan & Giải trí tại Hội An</h6>
+                        <h6 class="text-secondary mb-4">Hoạt động Tham quan & Giải trí tại Đà Nẵng</h6>
+                        <h6 class="text-secondary mb-4">Hoạt động Tham quan & Giải trí tại Nha Trang</h6>
+                        <h6 class="text-secondary">Hoạt động Tham quan & Giải trí tại Đà Lạt</h6>
+                    </div>
+                    <div class="col-sm px-4">
+                        <h6 class="text-secondary mb-4">Hoạt động Tham quan & Giải trí tại Hà Nội</h6>
+                        <h6 class="text-secondary mb-4">Hoạt động Tham quan & Giải trí tại Phú Quốc</h6>
+                        <h6 class="text-secondary mb-4">Hoạt động Tham quan & Giải trí tại Sa Pa</h6>
+                        <h6 class="text-secondary mb-4">Hoạt động Tham quan & Giải trí tại Hà Giang</h6>
+                        <h6 class="text-secondary">Hoạt động Tham quan & Giải trí tại Ninh Bình</h6>
+                    </div>
+                    <div class="col-sm px-4">
+                        <h6 class="text-secondary mb-4">Hoạt động Tham quan & Giải trí tại Singapore</h6>
+                        <h6 class="text-secondary mb-4">Hoạt động Tham quan & Giải trí tại Thái Lan</h6>
+                        <h6 class="text-secondary mb-4">Hoạt động Tham quan & Giải trí tại Malaysia</h6>
+                        <h6 class="text-secondary mb-4">Hoạt động Tham quan & Giải trí tại Hàn Quốc</h6>
+                        <h6 class="text-secondary">Hoạt động Tham quan & Giải trí tại Nhật Bản</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 mx-0 row p-0" style="background-image: url(image/banner5.webp); background-size: cover;">
+        <div class="row bg-dark bg-opacity-50 m-0 p-3">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 px-3">
+                <div class="text-center fs-3 fw-bold text-white">Luôn được cập nhật về các lời khuyên du lịch, đề xuất và khuyến mãi mới nhất.</div>
+                <form class="row g-3 mt-1">
+                    <div class="col-sm-8">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text text-primary" id="basic-addon1"><i class="bi bi-envelope"></i></span>
+                            <input type="text" class="form-control" placeholder="Địa chỉ email của bạn" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                    <button type="submit" class="btn btn-primary mb-3">Đăng ký tin</button>
+                    </div>
+                </form>
+                <div class="text-center mt-4 fs-5 fw-bold text-white">Có chuyến đi mơ ước của bạn trong tầm tay của bạn. Tải xuống ứng dụng.</div>
+                <div class="row gap-3 mt-3 px-5">
+                    <div class="col-sm-2 align-middle"><img src="image/qr.webp" alt=""></div>
+                    <div class="col-sm-3 align-middle"><img src="image/googleplay.svg" alt=""></div>
+                    <div class="col-sm-3 align-middle"><img src="image/appstore.svg" alt=""></div>
+                    <div class="col-sm-4"></div>
+                </div>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        
+        
+    </div>
+</div>

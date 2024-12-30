@@ -1,0 +1,181 @@
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2" tabindex="0">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb gap-2">
+                  <li class="breadcrumb-item"><a href="#" class="nav-link fw-medium text-secondary"><p class="text-nowrap"><small>Hotel</small></p></a></li>
+                  <li class="breadcrumb-item"><a href="#" class="nav-link fw-medium text-secondary me-1"><p class="text-nowrap"><small>Việt Nam</small></p></a></li>
+                  <li class="breadcrumb-item"><a href="#" class="nav-link fw-medium text-secondary me-1"><p class="text-nowrap"><small>{{detailhotel.location}}</small></p></a></li>
+                  <li class="breadcrumb-item nav-link fw-medium active" aria-current="page"><p class="text-nowrap"><small>{{detailhotel.name}}</small></p></li>
+                </ol>
+              </nav>
+            <div class="row">
+                <div class="col-md-8">
+                    <h4 id="scrollspyHeading1">{{detailhotel.name}}</h4>
+                    <p class="text-secondary fw-medium">
+                        {{detailhotel.name}}
+                    </p>
+                    <p>
+                        <span class="badge text-primary bg-primary bg-opacity-10">
+                            <i class="bi bi-building-fill"></i> Khách sạn
+                        </span>
+                        <span>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </span>
+                    </p>
+                    <p class="fw-medium">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        {{detailhotel.name}}, Việt Nam, 550000
+                        <span class="text-primary">Xem bản đồ</span>
+                    </p>
+                </div>
+                <div class="col-md-4 text-end align-self-end">
+                    <p class="fw-medium mb-1">Giá/phòng/đêm từ</p>
+                    <h5 class="text-danger fw-bold mb-1">{{detailhotel.price|currency:"":""}}  VND</h5>
+                    <button class="btn bg-danger fw-bold text-white px-5" ng-click="addtocart(detailhotel.id)">Chọn phòng</button>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-8 p-0">
+                    <img src="image/{{detailhotel.images[0]}}" alt="" class="w-100 h-100 p-1 rounded-3">
+                </div>
+                <div class="col-md-4 d-flex flex-column">
+                    <div class="row flex-fill">
+                        <div class="col-6 p-0"><img src="image/{{detailhotel.images[1]}}" alt="" class="w-100 h-100 p-1 rounded-3"></div>
+                        <div class="col-6 p-0"><img src="image/{{detailhotel.images[2]}}" alt="" class="w-100 h-100 p-1 rounded-3"></div>
+                    </div>
+                    <div class="row flex-fill">
+                        <div class="col-6 p-0"><img src="image/{{detailhotel.images[3]}}" alt="" class="w-100 h-100 p-1 rounded-3"></div>
+                        <div class="col-6 p-0"><img src="image/{{detailhotel.images[1]}}" alt="" class="w-100 h-100 p-1 rounded-3"></div>
+                    </div>
+                    <div class="row flex-fill">
+                        <div class="col-6 p-0"><img src="image/{{detailhotel.images[0]}}" alt="" class="w-100 h-100 p-1 rounded-3"></div>
+                        <div class="col-6 p-0"><img src="image/{{detailhotel.images[2]}}" alt="" class="w-100 h-100 p-1 rounded-3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col p-0">
+                    <p class="bg-primary bg-opacity-10 fw-medium  px-3 py-2 rounded border text-secondary"><span class="text-primary">Hiếm khi còn phòng!</span> Chổ ở này thường kín phòng</p>
+                </div>
+            </div>
+            <div class="row mt-3 gap-3">
+                <div class="col-sm-4">
+                    <div class="bg-white row border rounded p-3">
+                        <div class="row">
+                            <div class="col">
+                                <p class="fw-bold mb-0">Giới thiệu cơ sở lưu trú</p>
+                            </div>
+                            <div class="col text-end">
+                                <p class="fw-medium text-primary mb-0">Xem thêm <i class="bi bi-chevron-right"></i></p>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <p class=" mb-0">{{detailhotel.description|limitTo:150}}</p>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <p class="fw-bold mb-0"><i class="bi bi-bookmark-check-fill text-primary"></i> Đã có checkin trực tuyến</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="bg-white row border rounded p-3 mt-3">
+                        <div class="row">
+                            <div class="col">
+                                <p class="fw-bold mb-0">Tiện ích chung</p>
+                            </div>
+                            <div class="col text-end">
+                                <p class="fw-medium text-primary mb-0">Xem thêm <i class="bi bi-chevron-right"></i></p>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col-md-6 px-2">
+                                        <p class="mb-2 fw-medium" ng-repeat="amenity in detailhotelamenities|limitTo:6"><img src="image/{{amenity.image}}" alt="" class="me-2"> {{amenity.name}}</p>
+                                    </div>
+                                    <div class="col-md-6 px-2">
+                                        <p class="mb-2 fw-medium" ng-repeat="amenity in detailhotelamenities|limitTo:6:6"><img src="image/{{amenity.image}}" alt="" class="me-2"> {{amenity.name}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="bg-white row border rounded p-0" style="background-image: url('image/badge4.svg'); ">
+                        <div class="p-3  rounded" style="background-image: linear-gradient(45deg, rgb(255, 255, 255) 60%, rgba(255, 255, 255, 0) 100%);">
+                        
+                            <div class="row">
+                                <div class="col">
+                                    <p class="fw-bold mb-0">Trong khu vực</p>
+                                </div>
+                                <div class="col text-end">
+                                    <p class="fw-medium text-primary mb-0">Xem thêm <i class="bi bi-chevron-right"></i></p>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-sm" ng-repeat="area in detailhotel.inarea|limitTo:2:0">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            
+                                            <i class="bi bi-ticket-fill text-primary me-2"></i>
+                                            <span class="fw-medium">{{area.location}}</span>
+                                        </div>
+                                        <div class="col-4 text-end">
+                                            <span class="fw-medium text-secondary"><small>{{area.distance/1000|number:2}} km</small></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-sm" ng-repeat="area in detailhotel.inarea|limitTo:2:2">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            
+                                            <i class="bi bi-ticket-fill text-primary me-2"></i>
+                                            <span class="fw-medium">{{area.location}}</span>
+                                        </div>
+                                        <div class="col-4 text-end">
+                                            <span class="fw-medium text-secondary"><small>{{area.distance/1000|number:2}} km</small></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-sm" ng-repeat="area in detailhotel.inarea|limitTo:2:4">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            
+                                            <i class="bi bi-ticket-fill text-primary me-2"></i>
+                                            <span class="fw-medium">{{area.location}}</span>
+                                        </div>
+                                        <div class="col-4 text-end">
+                                            <span class="fw-medium text-secondary"><small>{{area.distance/1000|number:2}} km</small></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>...</p>
+            <h4 id="scrollspyHeading2">Second heading</h4>
+            <p>...</p>
+            <h4 id="scrollspyHeading3">Third heading</h4>
+            <p>...</p>
+            <h4 id="scrollspyHeading4">Fourth heading</h4>
+            <p>...</p>
+            <h4 id="scrollspyHeading5">Fifth heading</h4>
+            <p>...</p>
+            <h4 id="scrollspyHeading6">Sixth heading</h4>
+        </div>
+    </div>

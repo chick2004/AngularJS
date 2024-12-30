@@ -1,0 +1,274 @@
+<div class="container my-3">
+    <div class="row">
+        <div class="col-md-3">
+            <nav class="navbar navbar-expand-lg p-0">
+                <div class="container-fluid p-0">
+                  <button class="navbar-toggler w-100 mb-3 border-1 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#filter" aria-controls="filter" aria-expanded="false" aria-label="Toggle navigation">
+                    Bộ lọc
+                  </button>
+                  <div class="collapse navbar-collapse" id="filter">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 flex-column">
+                        
+                        <li class="nav-item p-0">
+                            <a href="" class="nav-link p-2 w-100 rounded border" style="background-image: url('image/badge.webp'); background-size: cover; background-repeat: no-repeat; background-position: right;">
+                                <div class="container">
+                                    <p class="fw-medium mb-0 text-white">Tại sao phải đặt giá cao</p>
+                                    <p class="fw-medium mb-0 text-white">Trong khi có thể đặt giá thấp hơn</p>
+                                    <p class=" mb-0 text-white"><small>Tải app để nhận nhiều ưu đãi</small></p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item p-0 mt-3">
+                            <div class="container text-end p-2 rounded border" style="background-image: url('image/badge2.webp'); background-size: cover; background-repeat: no-repeat; background-position: right;">
+                                <button class="btn btn-primary fw-medium"><small>Mở bản đồ</small></button>
+                            </div>
+                        </li>
+                        <li class="nav-item p-0 mt-3 bg-white">
+                            <div class="container p-2 rounded border">
+                                <button class="btn w-100 text-start fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#generalFilter" aria-expanded="false" aria-controls="generalFilter">
+                                    Bộ lọc phổ biến
+                                </button>
+                                <div class="collapse p-2" id="generalFilter">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="HotelCheckDefault">
+                                        <label class="form-check-label fw-medium" for="HotelCheckDefault">
+                                            Khách sạn
+                                        </label>
+                                    </div>
+                                    <div class="form-check mt-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="5sCheckDefault">
+                                        <label class="form-check-label" for="5sCheckDefault">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </label>
+                                    </div>
+                                    <div class="form-check mt-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="4sCheckDefault">
+                                        <label class="form-check-label" for="4sCheckDefault">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </label>
+                                    </div>
+                                    <div class="form-check mt-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="SwimmingPoolCheckDefault">
+                                        <label class="form-check-label fw-medium" for="SwimmingPoolCheckDefault">
+                                            Hồ bơi
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item p-0 mt-3 bg-white">
+                            <div class="container p-2 rounded border">
+                                <button class="btn w-100 text-start fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#priceRange" aria-expanded="false" aria-controls="priceRange">
+                                    Phạm vi giá (1 phòng 1 đêm) VNĐ
+                                </button>
+                                <div class="row mt-2">
+                                    <div class="col-6">
+                                        <div class="">
+                                            <p class="py-1 px-2 rounded-pill border w-100 mb-0">{{minPrice|number}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="text-end">
+                                            <p class="py-1 px-2 rounded-pill border w-100 mb-0">{{maxPrice|number}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="container px-3">
+                                        <label for="customRange1" class="form-label">Giá thấp nhất</label>
+                                        <input type="range" class="form-range" id="customRange1" ng-model="minPrice" ng-init="minPrice='1000000'" step="500000" value="1000000" min="1000000" max="9999999">
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="container px-3">
+                                        <label for="customRange2" class="form-label">Giá cao nhất</label>
+                                        <input type="range" class="form-range" id="customRange2" ng-model="maxPrice" ng-init="maxPrice='10000000'" step="500000" value="10000000" min="1000000" max="10000000">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item p-0 mt-3 bg-white">
+                            <div class="container p-2 rounded border">
+                                <button class="btn w-100 text-start fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#starFilter" aria-expanded="false" aria-controls="starFilter">
+                                    Hạng sao
+                                </button>
+                                <div class="collapse p-2" id="starFilter">
+                                    <div class="form-check mt-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="5sCheckDefault">
+                                        <label class="form-check-label" for="5sCheckDefault">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </label>
+                                    </div>
+                                    <div class="form-check mt-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="4sCheckDefault">
+                                        <label class="form-check-label" for="4sCheckDefault">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </label>
+                                    </div>
+                                    <div class="form-check mt-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="3sCheckDefault">
+                                        <label class="form-check-label" for="4sCheckDefault">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </label>
+                                    </div>
+                                    <div class="form-check mt-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="2sCheckDefault">
+                                        <label class="form-check-label" for="4sCheckDefault">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </label>
+                                    </div>
+                                    <div class="form-check mt-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="1sCheckDefault">
+                                        <label class="form-check-label" for="4sCheckDefault">
+                                            <i class="bi bi-star-fill text-warning"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+        </div>
+        <div class="col-md-9">
+            <div class="container">
+                <div class="row gap-3">
+                    <div class="col-md d-flex justify-content-between border rounded p-2" style="background-image: url('image/badge3.svg'); background-size: contain; background-repeat: no-repeat;">
+                        <p class="fw-medium mb-0 d-flex"><small class="align-self-center">Chọn nhiều nhất</small></p>
+                        <p class="fw-medium mb-0 d-flex"><small class="align-self-center">Phù hợp gia đình</small></p>
+                        <p class="fw-medium mb-0 d-flex"><small class="align-self-center">Khách sạn xuất hóa đơn</small></p>
+                    </div>
+                    
+                    <div class="col-md border rounded p-0" style="background-image: url('image/badge3.svg'); background-size: contain; background-repeat: no-repeat;">
+                        <div class="row gap-0">
+                            <div class="col">
+                                <div class="dropdown">
+                                    <button class="btn w-100 dropdown-toggle text-start px-2 py-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <p class="mb-0 fw-medium"><small><small>Xếp theo</small></small></p>
+                                        <span class="mb-0 fw-medium text-primary">Độ phổ biến</span>
+                                    </button>
+                                    <ul class="dropdown-menu p-1 w-100">
+                                      <li><button class="dropdown-item rounded" href="#" ng-click="sortBy('-price')">Giá cao nhất</button></li>
+                                      <li><button class="dropdown-item rounded" href="#" ng-click="sortBy('+price')">Giá thấp nhất</button></li>
+                                      <li><button class="dropdown-item rounded" href="#" ng-click="sortBy('-rating')">Điểm đánh giá</button></li>
+                                      <li><button class="dropdown-item rounded active" href="#" ng-click="sortBy('-reviews')">Độ phổ biến</button></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                            <div class="col">
+                                <div class="dropdown">
+                                    <button class="btn w-100 dropdown-toggle text-start px-2 py-1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <p class="mb-0 fw-medium"><small><small>Hiển thị giá</small></small></p>
+                                        <span class="mb-0 fw-medium text-primary">Mỗi phòng mỗi đêm</span>
+                                    </button>
+                                    <ul class="dropdown-menu p-1 w-100">
+                                      <li><a class="dropdown-item rounded active" href="#">Mỗi phòng mỗi đêm</a></li>
+                                      <li><a class="dropdown-item rounded" href="#">Tổng giá</a></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col text-white bg-primary mt-3 rounded mb-0 py-2">
+                        <small class="fw-medium">Sao phải trả nhiều hơn khi luôn có giá rẻ hơn trên App - Click dấu "?" bên phải để tải ngay ứng dụng Traveloka và đặt khách sạn rẻ hơn!</small>
+                        <i class="bi bi-question-circle-fill"></i>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-group mt-3 p-0">
+                        <input type="text" class="form-control" ng-model="search">
+                        <span class="input-group-text">
+                            <i class="bi bi-search"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row mt-3 border rounded" ng-repeat="hotel in hotels|orderBy:prop| filter: filterByPrice | filter: search">
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col p-0">
+                                <img src="image/{{hotel.images[0]}}" alt="" class="w-100 p-1">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 p-0">
+                                <img src="image/{{hotel.images[1]}}" alt="" class="w-100 p-1">
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="image/{{hotel.images[2]}}" alt="" class="w-100 p-1">
+                            </div>
+                            <div class="col-4 p-0">
+                                <img src="image/{{hotel.images[3]}}" alt="" class="w-100 p-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 py-3 border-end position-relative">
+                        <div class="position-absolute top-0 end-0 p-2">
+                            <p class="mb-0">
+                                <span class="text-primary fw-medium">{{hotel.rating|number:2}}</span>
+                                <span class="text-secondary fw-medium">({{hotel.reviews}})</span>
+                            </p>
+                            <p class="text-secondary fw-medium"><small><small>Ấn tượng</small></small></p>
+                        </div>
+                        <h6 class="text-black fw-medium">{{hotel.name}}</h6>
+                        <p>
+                            <span class="badge text-primary bg-primary bg-opacity-10">
+                                <i class="bi bi-building-fill"></i> Khách sạn
+                            </span>
+                            <span>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </span>
+                        </p>
+                        <p class="text-secondary fw-medium">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            {{hotel.location}}
+                        </p>
+                        <p>
+                            <span class="badge text-secondary bg-secondary bg-opacity-10 me-1" ng-repeat="feature in hotel.features | limitTo:3">
+                                {{hotelfeatures[feature-1].name}}
+                            </span>
+                            
+                            <span class="badge text-secondary bg-secondary bg-opacity-10">
+                                +2
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col-md-3 h-100 text-end p-3 align-self-end">
+                        <p class="mb-0 text-success fw-medium"><i class="bi bi-building-fill text-success"></i> <small>Ưu đãi</small></p>
+                        <p class="text-decoration-line-through text-secondary mb-2">{{hotel.price|currency:"":""}} VNĐ</p>
+                        <p class=" text-danger fw-bold fs-5 mb-0">{{hotel.price*(100-hotel.discount)/100|currency:"":""}} VNĐ</p>
+                        <p class="text-secondary fw-medium mb-1"><small>Bao gồm thuế và phí</small></p>
+                        <a class="btn bg-danger text-white fw-bold mt-3" href="#!hoteldetail/{{hotel.id}}">Xem phòng</a>
+                        <button class="btn border-danger text-danger fw-bold mt-3" ng-click="addtocart(hotel.id)">Thêm vào giỏ hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

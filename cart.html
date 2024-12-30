@@ -1,0 +1,99 @@
+<div class="container py-5">
+    <h5>Giỏ hàng</h5>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="mb-4" ng-repeat="hotel in cart">
+                <input type="checkbox" name="" id="checkbox{{hotel.id}}" ng-model="hotel.selected" ng-init="hotel.selected = false;" hidden>
+                <label for="checkbox{{hotel.id}}" class="container row p-3 border shadow-sm rounded position-relative" ng-class="{ 'bg-secondary-subtle': hotel.selected }">
+                    <div class="col-4 ps-0">
+                        <img src="image/{{hotel.images[0]}}" alt="" class="img-fluid rounded border h-100">
+                    </div>
+                    <div class="col-8 p-0">
+                        <h5 class="fw-bold text-end">{{hotel.name}}</h5>
+                        <p class="fw-medium text-secondary text-end">Giá phòng (1 đêm): <span class="ms-2"> {{hotel.price|currency:"":""}} VNĐ</span></p>
+                        <hr>
+                        <div class="row mb-2">
+                            <div class="col-4">
+                                <small class="fw-medium">Ngày nhận phòng</small>
+                            </div>
+                            <div class="col-4">
+                                <small class="fw-medium">Ngày trả phòng</small>
+                            </div>
+                            <div class="col-4">
+                                <small class="fw-medium">Số ngày</small>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-4">
+                                <input class="form-control" type="date" name="" id="" ng-model="hotel.checkindate" ng-init="hotel.checkindate = getCurrentDate(0)" min="{{getDate(getCurrentDate(0))}}" max="{{getDate(hotel.checkoutdate, -1)}}">
+                            </div>
+                            <div class="col-4">
+                                <input class="form-control" type="date" name="" id="" ng-model="hotel.checkoutdate" ng-init="hotel.checkoutdate = getCurrentDate(2)" min="{{getDate(getCurrentDate(1))}}">
+                            </div>
+                            <div class="col-4 d-flex">
+                                <p class="align-self-center">
+                                    {{getDateDifference(hotel.checkindate, hotel.checkoutdate)}}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button class="btn bg-danger text-white fw-medium" ng-click="deleteincart(hotel.id)">Xóa</button>
+                            </div>
+                            <div class="col text-end ">
+                                <p class="fw-medium">Thành tiền <span class="text-danger ms-3 fw-bold">{{hotel.price*getDateDifference(hotel.checkindate, hotel.checkoutdate)|currency:"":""}} VNĐ</span></p>
+                            </div>
+                        </div>
+    
+                        
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="container bg-white border rounded shadow-sm p-0 overflow-hidden sticky-top">
+                <h5 class="bg-primary p-2 text-center text-white">Thông tin thanh toán</h5>
+                <div class="row px-3">
+                    <div class="col">
+                        <p>Tổng lượt đặt</p>
+                    </div>
+                    <div class="col text-end fw-medium">
+                        <p>{{countCart()}}</p>
+                    </div>
+                </div>
+                <div class="row px-3">
+                    <div class="col">
+                        <p>Phí</p>
+                    </div>
+                    <div class="col text-end fw-medium">
+                        <p>0 VNĐ</p>
+                    </div>
+                </div>
+                
+                <div class="row px-3 mb-3">
+                    <div class="col fw-bold">
+                        <p>Tổng tiền</p>
+                    </div>
+                    <div class="col text-end fw-bold">
+                        <p>{{getTotalPrice()|currency:"":""}} VNĐ</p>
+                    </div>
+                </div>
+                
+                <div class="row px-3">
+                    <div class="col">
+                        <button class="btn btn-primary fw-medium w-100 mb-3">Xác nhận</button>
+                    </div>
+                </div>
+                
+                <div class="row px-3">
+                    <div class="col">
+                        <p class="fw-normal">
+                            <i class="bi bi-info-circle text-black me-1"></i>
+                            Bằng cách thanh toán, bạn đồng ý với <span class="text-primary">Điều khoản & Điều kiện</span> và <span class="text-primary">Chính Sách Quyền Riêng Tư</span> của chúng tôi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

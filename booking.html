@@ -1,0 +1,660 @@
+<div class="container py-5">
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-4">
+            <h5>Giao dịch đang tiến hành</h5>
+            <div class="nav flex-column nav-pills me-3 mt-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link text-start fw-medium active" id="v-pills-all-tab" data-bs-toggle="pill" data-bs-target="#v-pills-all" type="button" role="tab" aria-controls="v-pills-all" aria-selected="true">
+                    <i class="bi bi-card-list me-2"></i>
+                    Tất cả sản phẩm
+                </button>
+                
+                <h5 class=" mt-3">Khôi phục đặt chỗ</h5>
+                <button class="nav-link text-start fw-medium ps-2" id="v-pills-airline-ticket-tab" data-bs-toggle="pill" data-bs-target="#v-pills-airline-ticket" type="button" role="tab" aria-controls="v-pills-airline-ticket" aria-selected="false">
+                    <i class="bi bi-airplane-fill me-2"></i>
+                    Vé máy bay
+                </button>
+                <button class="nav-link text-start fw-medium ps-2" id="v-pills-hotel-tab" data-bs-toggle="pill" data-bs-target="#v-pills-hotel" type="button" role="tab" aria-controls="v-pills-hotel" aria-selected="false">
+                    <i class="bi bi-building-fill me-2"></i>
+                    Khách sạn
+                </button>
+                <button class="nav-link text-start fw-medium ps-2" id="v-pills-train-tab" data-bs-toggle="pill" data-bs-target="#v-pills-train" type="button" role="tab" aria-controls="v-pills-train" aria-selected="false">
+                    <i class="bi bi-train-front me-2"></i>
+                    Trains
+                </button>
+                <button class="nav-link text-start fw-medium ps-2 position-relative" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false" disabled>
+                    <i class="bi bi-airplane-fill"></i>
+                    Combo tiết kiệm
+                    <span class="badge rounded-circle p-1 bg-secondary text-white position-absolute end-0 top-50 translate-middle">
+                        <i class="bi bi-question"></i>
+                    </span>
+                </button>
+                <button class="nav-link text-start fw-medium ps-2 position-relative" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false" disabled>
+                    <i class="bi bi-balloon-fill"></i>
+                    Activites
+                    <span class="badge rounded-circle p-1 bg-secondary text-white position-absolute end-0 top-50 translate-middle">
+                        <i class="bi bi-question"></i>
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-all" role="tabpanel" aria-labelledby="v-pills-all-tab" tabindex="0">
+                    <div class="container">
+                        <div class="row bg-primary px-2 py-4 rounded shadow-sm">
+                            <div class="col-sm-2  align-self-center">
+                                <img src="image/khoiphucall.svg" alt="">
+                            </div>
+                            <div class="col-sm-10">
+                                <p class="text-white fw-bold mb-2">Dễ dàng truy cập đặt chỗ của bạn trên Traveloka</p>
+                                <p class="text-white fw-medium mb-0">Đăng nhập vào tài khoản Traveloka hoặc đăng ký để xem các đặt chỗ hiện tại và trước đây của bạn, cũng như quản lý mọi vấn đề liên quan tới đặt chỗ (ví dụ: yêu cầu hoàn tiền hoặc đổi lịch).</p>
+                            </div>
+                        </div>
+                        <div class="row bg-white px-2 py-4 rounded shadow-sm border mt-3">
+                            <div class="col-sm-2  align-self-center">
+                                <img src="image/khoiphucall2.svg" alt="">
+                            </div>
+                            <div class="col-sm-10">
+                                <p class="fw-bold mb-2">Không có giao dịch đang tiến hành</p>
+                                <p class="fw-medium mb-0">Bạn không có giao dịch đang tiến hành nào từ phiên giao dịch trước. Những giao dịch chưa hoàn thành sẽ được lưu tại đây.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-airline-ticket" role="tabpanel" aria-labelledby="v-pills-airline-ticket-tab" tabindex="0">
+                    <div class="container">
+                        <div class="row bg-primary px-2 py-4 rounded shadow-sm">
+                            <div class="col-sm-2  align-self-center">
+                                <img src="image/khoiphucall.svg" alt="">
+                            </div>
+                            <div class="col-sm-10">
+                                <p class="text-white fw-bold mb-2">Dễ dàng truy cập đặt chỗ của bạn trên Traveloka</p>
+                                <p class="text-white fw-medium mb-0">Đăng nhập vào tài khoản Traveloka hoặc đăng ký để xem các đặt chỗ hiện tại và trước đây của bạn, cũng như quản lý mọi vấn đề liên quan tới đặt chỗ (ví dụ: yêu cầu hoàn tiền hoặc đổi lịch).</p>
+                            </div>
+                        </div>
+                        <div class="row bg-white px-2 py-4 rounded shadow-sm border mt-3">
+                            <h5 class="fw-medium">Khôi phục đặt chỗ</h5>
+                            <form action="" class="">
+                                <div class="row mt-3">
+                                    <div class="col-sm">
+                                        <div class="form-group">
+                                            <label class="fw-medium mb-1" for="">Mã đặt chỗ Traveloka</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 position-relative">
+                                        <div class="form-group">
+                                            <label class="fw-medium mb-1" for="">Ngày bay</label><br>
+                                            <a class="btn btn-default border fw-medium w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDate" role="button" aria-expanded="false" aria-controls="collapseDate">
+                                                Wed, Mar 20, 2024
+                                            </a>
+                                        </div>
+                                        <div class="collapse position-absolute end-0 z-1 w-auto" id="collapseDate">
+                                            <div class="container p-2 bg-white border shadow">
+                                                <div class="row">
+                                                    <div class="col"><p class="fw-medium">March 2024</p></div>
+                                                    <div class="col text-end">
+                                                        <i class="bi bi-chevron-left text-primary"></i>
+                                                        <i class="bi bi-chevron-right text-primary"></i>
+                                                    </div>
+                                                </div>
+                                                <table>
+                                                    <tr class="border-bottom">
+                                                        <td class="col fw-medium text-secondary p-2"><small>Mon</small></td>
+                                                        <td class="col fw-medium text-secondary p-2"><small>Tue</small></td>
+                                                        <td class="col fw-medium text-secondary p-2"><small>Wed</small></td>
+                                                        <td class="col fw-medium text-secondary p-2"><small>Thu</small></td>
+                                                        <td class="col fw-medium text-secondary p-2"><small>Fri</small></td>
+                                                        <td class="col fw-medium text-secondary p-2"><small>Sat</small></td>
+                                                        <td class="col fw-medium text-secondary p-2 text-danger"><small>Sun</small></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class=""></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">1</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">2</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center text-danger">3</h6>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">4</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">5</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">6</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">7</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">8</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">9</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center text-danger">10</h6>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">11</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">12</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">13</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">14</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">15</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">16</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center text-danger">17</h6>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">18</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">19</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">20</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">21</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">22</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">23</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center text-danger">24</h6>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">25</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">26</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">27</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">28</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">29</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">30</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center text-danger">31</h6>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm">
+                                        <div class="form-group">
+                                            <label class="fw-medium mb-1" for="">Số điện thoại</label>
+                                            <div class="input-group">
+                                                
+                                                <span class="input-group-text">
+                                                    <div class="row px-2">
+                                                        <div class="col p-0 me-2 align-self-center">
+                                                            <img src="image/vietnamflag.jpg" alt="" class="">
+                                                        </div>
+                                                        <div class="col p-0">
+                                                            +84
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mt-3">
+                                    <div class="col">
+                                        <p class="fw-medium">Sau khi gửi biểu mẫu bên dưới, chúng tôi sẽ gửi vé điện tử trực tiếp đến địa chỉ email bạn đã sử dụng khi đặt chỗ. Biểu mẫu này cũng có thể sử dụng để hoàn thành các giao dịch chưa thanh toán của bạn.</p>
+                                    </div>
+                                </div>
+                                <div class="row mt-3 text-end">
+                                    
+                                    <div class="col-sm">
+                                        <button class="btn btn-default border">Quên mã đặt chỗ</button>
+                                        <button class="btn btn-primary">Khôi phục đặt chỗ</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-hotel" role="tabpanel" aria-labelledby="v-pills-hotel-tab" tabindex="0">
+                    <div class="container">
+                        <div class="row bg-primary px-2 py-4 rounded shadow-sm">
+                            <div class="col-sm-2  align-self-center">
+                                <img src="image/khoiphucall.svg" alt="">
+                            </div>
+                            <div class="col-sm-10">
+                                <p class="text-white fw-bold mb-2">Dễ dàng truy cập đặt chỗ của bạn trên Traveloka</p>
+                                <p class="text-white fw-medium mb-0">Đăng nhập vào tài khoản Traveloka hoặc đăng ký để xem các đặt chỗ hiện tại và trước đây của bạn, cũng như quản lý mọi vấn đề liên quan tới đặt chỗ (ví dụ: yêu cầu hoàn tiền hoặc đổi lịch).</p>
+                            </div>
+                        </div>
+                        <div class="row bg-white px-2 py-4 rounded shadow-sm border mt-3">
+                            <h5 class="fw-medium">Khôi phục đặt chỗ</h5>
+                            <form action="" class="">
+                                <div class="row mt-3">
+                                    <div class="col-sm">
+                                        <div class="form-group">
+                                            <label class="fw-medium mb-1" for="">Mã đặt chỗ Traveloka</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 position-relative">
+                                        <div class="form-group">
+                                            <label class="fw-medium mb-1" for="">Ngày bay</label><br>
+                                            <a class="btn btn-default border fw-medium w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDate" role="button" aria-expanded="false" aria-controls="collapseDate">
+                                                Wed, Mar 20, 2024
+                                            </a>
+                                        </div>
+                                        <div class="collapse position-absolute end-0 z-1 w-auto" id="collapseDate">
+                                            <div class="container p-2 bg-white border shadow">
+                                                <div class="row">
+                                                    <div class="col"><p class="fw-medium">March 2024</p></div>
+                                                    <div class="col text-end">
+                                                        <i class="bi bi-chevron-left text-primary"></i>
+                                                        <i class="bi bi-chevron-right text-primary"></i>
+                                                    </div>
+                                                </div>
+                                                <table>
+                                                    <tr class="border-bottom">
+                                                        <td class="col fw-medium text-secondary p-2"><small>Mon</small></td>
+                                                        <td class="col fw-medium text-secondary p-2"><small>Tue</small></td>
+                                                        <td class="col fw-medium text-secondary p-2"><small>Wed</small></td>
+                                                        <td class="col fw-medium text-secondary p-2"><small>Thu</small></td>
+                                                        <td class="col fw-medium text-secondary p-2"><small>Fri</small></td>
+                                                        <td class="col fw-medium text-secondary p-2"><small>Sat</small></td>
+                                                        <td class="col fw-medium text-secondary p-2 text-danger"><small>Sun</small></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class=""></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">1</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">2</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center text-danger">3</h6>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">4</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">5</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">6</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">7</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">8</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">9</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center text-danger">10</h6>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">11</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">12</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">13</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">14</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">15</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">16</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center text-danger">17</h6>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">18</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">19</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">20</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">21</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">22</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">23</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center text-danger">24</h6>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">25</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">26</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">27</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">28</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">29</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">30</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center text-danger">31</h6>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm">
+                                        <div class="form-group">
+                                            <label class="fw-medium mb-1" for="">Số điện thoại</label>
+                                            <div class="input-group">
+                                                
+                                                <span class="input-group-text">
+                                                    <div class="row px-2">
+                                                        <div class="col p-0 me-2 align-self-center">
+                                                            <img src="image/vietnamflag.jpg" alt="" class="">
+                                                        </div>
+                                                        <div class="col p-0">
+                                                            +84
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mt-3">
+                                    <div class="col">
+                                        <p class="fw-medium">Sau khi gửi biểu mẫu bên dưới, chúng tôi sẽ gửi vé điện tử trực tiếp đến địa chỉ email bạn đã sử dụng khi đặt chỗ. Biểu mẫu này cũng có thể sử dụng để hoàn thành các giao dịch chưa thanh toán của bạn.</p>
+                                    </div>
+                                </div>
+                                <div class="row mt-3 text-end">
+                                    
+                                    <div class="col-sm">
+                                        <button class="btn btn-default border">Quên mã đặt chỗ</button>
+                                        <button class="btn btn-primary">Khôi phục đặt chỗ</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-train" role="tabpanel" aria-labelledby="v-pills-train-tab" tabindex="0">
+                    <div class="container">
+                        <div class="row bg-primary px-2 py-4 rounded shadow-sm">
+                            <div class="col-sm-2  align-self-center">
+                                <img src="image/khoiphucall.svg" alt="">
+                            </div>
+                            <div class="col-sm-10">
+                                <p class="text-white fw-bold mb-2">Dễ dàng truy cập đặt chỗ của bạn trên Traveloka</p>
+                                <p class="text-white fw-medium mb-0">Đăng nhập vào tài khoản Traveloka hoặc đăng ký để xem các đặt chỗ hiện tại và trước đây của bạn, cũng như quản lý mọi vấn đề liên quan tới đặt chỗ (ví dụ: yêu cầu hoàn tiền hoặc đổi lịch).</p>
+                            </div>
+                        </div>
+                        <div class="row bg-white px-2 py-4 rounded shadow-sm border mt-3">
+                            <h5 class="fw-medium">Khôi phục đặt chỗ</h5>
+                            <form action="" class="">
+                                <div class="row mt-3">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label class="fw-medium mb-1" for="">Mã đặt chỗ Traveloka</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 position-relative">
+                                        <div class="form-group">
+                                            <label class="fw-medium mb-1" for="">Ngày bay</label><br>
+                                            <a class="btn btn-default border fw-medium w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDate" role="button" aria-expanded="false" aria-controls="collapseDate">
+                                                Wed, Mar 20, 2024
+                                            </a>
+                                        </div>
+                                        <div class="collapse position-absolute end-0 z-1 w-auto" id="collapseDate">
+                                            <div class="container p-2 bg-white border shadow">
+                                                <div class="row">
+                                                    <div class="col"><p class="fw-medium">March 2024</p></div>
+                                                    <div class="col text-end">
+                                                        <i class="bi bi-chevron-left text-primary"></i>
+                                                        <i class="bi bi-chevron-right text-primary"></i>
+                                                    </div>
+                                                </div>
+                                                <table>
+                                                    <tr class="border-bottom">
+                                                        <td class="col fw-medium text-secondary p-2"><small>Mon</small></td>
+                                                        <td class="col fw-medium text-secondary p-2"><small>Tue</small></td>
+                                                        <td class="col fw-medium text-secondary p-2"><small>Wed</small></td>
+                                                        <td class="col fw-medium text-secondary p-2"><small>Thu</small></td>
+                                                        <td class="col fw-medium text-secondary p-2"><small>Fri</small></td>
+                                                        <td class="col fw-medium text-secondary p-2"><small>Sat</small></td>
+                                                        <td class="col fw-medium text-secondary p-2 text-danger"><small>Sun</small></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class=""></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">1</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">2</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center text-danger">3</h6>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">4</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">5</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">6</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">7</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">8</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">9</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center text-danger">10</h6>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">11</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">12</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">13</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">14</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">15</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">16</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center text-danger">17</h6>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">18</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">19</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">20</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">21</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">22</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">23</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center text-danger">24</h6>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">25</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">26</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">27</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">28</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">29</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center">30</h6>
+                                                        </td>
+                                                        <td>
+                                                            <h6 class="btn fw-medium text-center text-danger">31</h6>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-sm">
+                                        <div class="form-group">
+                                            <label class="fw-medium mb-1" for="">Số điện thoại</label>
+                                            <div class="input-group">
+                                                
+                                                <span class="input-group-text">
+                                                    <div class="row px-2">
+                                                        <div class="col p-0 me-2 align-self-center">
+                                                            <img src="image/vietnamflag.jpg" alt="" class="">
+                                                        </div>
+                                                        <div class="col p-0">
+                                                            +84
+                                                        </div>
+                                                    </div>
+                                                </span>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mt-3">
+                                    <div class="col">
+                                        <p class="fw-medium">Sau khi gửi biểu mẫu bên dưới, chúng tôi sẽ gửi vé điện tử trực tiếp đến địa chỉ email bạn đã sử dụng khi đặt chỗ. Biểu mẫu này cũng có thể sử dụng để hoàn thành các giao dịch chưa thanh toán của bạn.</p>
+                                    </div>
+                                </div>
+                                <div class="row mt-3 text-end">
+                                    
+                                    <div class="col-sm">
+                                        <button class="btn btn-default border">Quên mã đặt chỗ</button>
+                                        <button class="btn btn-primary">Khôi phục đặt chỗ</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+</div>

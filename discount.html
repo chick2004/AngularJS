@@ -1,0 +1,823 @@
+<div class="" style="background-image: url('image/banner6.webp'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+    <div class="container">
+        <div class="row py-5 px-3">
+            <div class="col-sm-7">
+                <h3 class="text-white">Duyệt Tìm Khuyến Mại Cho Chuyến Đi Của Bạn</h3>
+                <h5 class="text-white">Dù bạn có kế hoạch chuyến đi như thế nào, hãy tìm những ưu đãi tốt nhất ở đây</h5>
+            </div>
+            <div class="col-sm-5 align-self-center">
+                <div class="input-group mb-3 mb-0">
+                    <input type="text" class="form-control rounded-start-pill" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    <span class="input-group-text bg-warning text-white rounded-end-pill" id="basic-addon1"><i class="bi bi-search"></i></span>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt--5">
+    <style>
+        #discountTab .active {
+            border-bottom: 4px solid #0194f3 !important;
+            background-color: #f0f3ff;
+        }
+    </style>
+    <ul class="nav nav-tabs bg-white rounded-2 shadow-sm w-100 d-flex justify-content-evenly" id="discountTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link border-0 text-secondary fw-medium py-3 active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all-tab-pane" type="button" role="tab" aria-controls="all-tab-pane" aria-selected="true">
+            <i class="bi bi-grid-3x3-gap text-primary"></i><br>
+            Tất cả
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link border-0 text-secondary fw-medium py-3" id="airline-ticket-tab" data-bs-toggle="tab" data-bs-target="#airline-ticket-tab-pane" type="button" role="tab" aria-controls="airline-ticket-tab-pane" aria-selected="false">
+              <i class="bi bi-airplane-fill text-primary"></i><br>
+              Vé máy bay
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link border-0 text-secondary fw-medium py-3" id="road-travel-tab" data-bs-toggle="tab" data-bs-target="#road-travel-tab-pane" type="button" role="tab" aria-controls="road-travel-tab-pane" aria-selected="false">
+              <i class="bi bi-train-freight-front-fill text-primary"></i><br>
+              Di chuyển đường bộ
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link border-0 text-secondary fw-medium py-3" id="tour-tab" data-bs-toggle="tab" data-bs-target="#tour-tab-pane" type="button" role="tab" aria-controls="tour-tab-pane" aria-selected="false">
+                <i class="bi bi-balloon-fill text-primary"></i><br>
+              Vé vui chơi & Tour
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link border-0 text-secondary fw-medium py-3" id="postpayment-tab" data-bs-toggle="tab" data-bs-target="#postpayment-tab-pane" type="button" role="tab" aria-controls="postpayment-tab-pane" aria-selected="false">
+              <i class="bi bi-credit-card-fill text-primary"></i><br>
+              Thanh toán & Trả sau
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link border-0 text-secondary fw-medium py-3" id="partner-tab" data-bs-toggle="tab" data-bs-target="#partner-tab-pane" type="button" role="tab" aria-controls="partner-tab-pane" aria-selected="false">
+                <i class="bi bi-rocket-takeoff-fill text-primary"></i><br>
+                Đối tác
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content mt-4" id="discountTabContent">
+        <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel" aria-labelledby="all-tab" tabindex="0">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col"><h5><i class="bi bi-airplane-fill text-primary"></i> Vé máy bay</h5></div>
+                    <div class="col text-end text-primary"><h6>Xem thêm <i class="bi bi-chevron-right"></i></h6></div>
+                </div>
+                <div class="row border-bottom pb-4">
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col"><h5><i class="bi bi-train-freight-front-fill text-primary"></i> Di chuyển đường bộ</h5></div>
+                    <div class="col text-end text-primary"><h6>Xem thêm <i class="bi bi-chevron-right"></i></h6></div>
+                </div>
+                <div class="row border-bottom pb-4">
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col"><h5><i class="bi bi-balloon-fill text-primary"></i> Vé vui chơi & Tour</h5></div>
+                    <div class="col text-end text-primary"><h6>Xem thêm <i class="bi bi-chevron-right"></i></h6></div>
+                </div>
+                <div class="row border-bottom pb-4">
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col"><h5><i class="bi bi-credit-card-fill text-primary"></i> Thanh toán & Trả sau</h5></div>
+                    <div class="col text-end text-primary"><h6>Xem thêm <i class="bi bi-chevron-right"></i></h6></div>
+                </div>
+                <div class="row border-bottom pb-4">
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col"><h5><i class="bi bi-rocket-takeoff-fill text-primary"></i> Đối tác</h5></div>
+                    <div class="col text-end text-primary"><h6>Xem thêm <i class="bi bi-chevron-right"></i></h6></div>
+                </div>
+                <div class="row pb-4">
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body border-bottom p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="airline-ticket-tab-pane" role="tabpanel" aria-labelledby="airline-ticket-tab" tabindex="0">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col"><h5><i class="bi bi-airplane-fill text-primary"></i> Vé máy bay</h5></div>
+                    <div class="col text-end text-primary"><h6>Xem thêm <i class="bi bi-chevron-right"></i></h6></div>
+                </div>
+                <div class="row pb-4">
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <nav aria-label="...">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item mx-1">
+                            <a class="page-link rounded-2" href="#">
+                                <i class="bi bi-chevron-left"></i>
+                            </a>
+                          </li>
+                          <li class="page-item mx-1"><a class="page-link rounded-2" href="#">1</a></li>
+                          <li class="page-item mx-1 active" aria-current="page">
+                            <a class="page-link rounded-2" href="#">2</a>
+                          </li>
+                          <li class="page-item mx-1"><a class="page-link rounded-2" href="#">3</a></li>
+                          <li class="page-item mx-1">
+                            <a class="page-link rounded-2" href="#">
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="road-travel-tab-pane" role="tabpanel" aria-labelledby="road-travel-tab" tabindex="0">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col"><h5><i class="bi bi-train-freight-front-fill text-primary"></i> Di chuyển đường bộ</h5></div>
+                    <div class="col text-end text-primary"><h6>Xem thêm <i class="bi bi-chevron-right"></i></h6></div>
+                </div>
+                <div class="row pb-4">
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <nav aria-label="...">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item mx-1">
+                            <a class="page-link rounded-2" href="#">
+                                <i class="bi bi-chevron-left"></i>
+                            </a>
+                          </li>
+                          <li class="page-item mx-1"><a class="page-link rounded-2" href="#">1</a></li>
+                          <li class="page-item mx-1 active" aria-current="page">
+                            <a class="page-link rounded-2" href="#">2</a>
+                          </li>
+                          <li class="page-item mx-1"><a class="page-link rounded-2" href="#">3</a></li>
+                          <li class="page-item mx-1">
+                            <a class="page-link rounded-2" href="#">
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="tour-tab-pane" role="tabpanel" aria-labelledby="tour-tab" tabindex="0">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col"><h5><i class="bi bi-balloon-fill text-primary"></i> Vé vui chơi & Tour</h5></div>
+                    <div class="col text-end text-primary"><h6>Xem thêm <i class="bi bi-chevron-right"></i></h6></div>
+                </div>
+                <div class="row pb-4">
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <nav aria-label="...">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item mx-1">
+                            <a class="page-link rounded-2" href="#">
+                                <i class="bi bi-chevron-left"></i>
+                            </a>
+                          </li>
+                          <li class="page-item mx-1"><a class="page-link rounded-2" href="#">1</a></li>
+                          <li class="page-item mx-1 active" aria-current="page">
+                            <a class="page-link rounded-2" href="#">2</a>
+                          </li>
+                          <li class="page-item mx-1"><a class="page-link rounded-2" href="#">3</a></li>
+                          <li class="page-item mx-1">
+                            <a class="page-link rounded-2" href="#">
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="postpayment-tab-pane" role="tabpanel" aria-labelledby="postpayment-tab" tabindex="0">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col"><h5><i class="bi bi-credit-card-fill text-primary"></i> Thanh toán & Trả sau</h5></div>
+                    <div class="col text-end text-primary"><h6>Xem thêm <i class="bi bi-chevron-right"></i></h6></div>
+                </div>
+                <div class="row pb-4">
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <nav aria-label="...">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item mx-1">
+                            <a class="page-link rounded-2" href="#">
+                                <i class="bi bi-chevron-left"></i>
+                            </a>
+                          </li>
+                          <li class="page-item mx-1"><a class="page-link rounded-2" href="#">1</a></li>
+                          <li class="page-item mx-1 active" aria-current="page">
+                            <a class="page-link rounded-2" href="#">2</a>
+                          </li>
+                          <li class="page-item mx-1"><a class="page-link rounded-2" href="#">3</a></li>
+                          <li class="page-item mx-1">
+                            <a class="page-link rounded-2" href="#">
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="partner-tab-pane" role="tabpanel" aria-labelledby="partner-tab" tabindex="0">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col"><h5><i class="bi bi-rocket-takeoff-fill text-primary"></i> Đối tác</h5></div>
+                    <div class="col text-end text-primary"><h6>Xem thêm <i class="bi bi-chevron-right"></i></h6></div>
+                </div>
+                <div class="row pb-4">
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card" >
+                            <img src="image/discount-airline-ticket.webp" class="card-img-top" alt="...">
+                            <div class="card-body p-3">
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Thời gian khuyến mãi</small></h6>
+                                        <h6>5 Thg 3 2024 - 6 Thg 4 2025</h6>
+                                    </div>
+                                    <div class="col-sm">
+                                        <h6><small class="text-secondary">Giao dịch tối thiểu</small></h6>
+                                        <h6>Không có giao dịch tối thiểu</h6>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100">Xem khuyến mãi</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <nav aria-label="...">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item mx-1">
+                            <a class="page-link rounded-2" href="#">
+                                <i class="bi bi-chevron-left"></i>
+                            </a>
+                          </li>
+                          <li class="page-item mx-1"><a class="page-link rounded-2" href="#">1</a></li>
+                          <li class="page-item mx-1 active" aria-current="page">
+                            <a class="page-link rounded-2" href="#">2</a>
+                          </li>
+                          <li class="page-item mx-1"><a class="page-link rounded-2" href="#">3</a></li>
+                          <li class="page-item mx-1">
+                            <a class="page-link rounded-2" href="#">
+                                <i class="bi bi-chevron-right"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="bg-primary bg-opacity-10">
+<div class="container py-5 fw-medium">
+    How can I get Traveloka promo codes?
+    Besides a well-planned itinerary, traveling to your dream destination on your bucket list also needs a worry-free holiday budget. Traveloka is here to give you everyday deals to maximize your trip. Whether on Traveloka Web or Traveloka App, you can always get Traveloka Coupons and use promo codes to purchase any Traveloka products and get discounts.
+    <br><br>
+    You can get information about the ongoing Traveloka promos by visiting the homepage of the Traveloka website and clicking the “% Deals” section. Meanwhile, on the Traveloka App, you can easily spot the “Promos” section on the homepage. Then, easily tap on the desired promo based on your needs and read the Terms & Conditions. There are multiple categories to choose from, from Flight promos, Hotel promos, Ground Transport promos, and many more. 
+    How do I find cheap deals in Traveloka?
+    <br><br>
+    Finding the best deals in Traveloka is supposed to be the easiest part of your pre-departure trip. You can always check the latest promo deals by visiting Traveloka's “Promo” page on Traveloka Web and Traveloka App to see all of today's promotions and offers on Hotels, Flights, Activities, and more. 
+    <br><br>
+    Besides visiting the “Promo” page, finding cheap deals in the Traveloka App is recommended, as you can easily filter your search with the “Promo” filter to only sort Hotels or Activities with discounted prices or special deals. Specifically for Flight booking, there is a Price Alerts feature inside the Traveloka App that can help you get the best price on flight tickets.
+</div>
+</div>
